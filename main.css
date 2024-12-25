@@ -117,3 +117,39 @@ footer a:hover {
         flex: 1 1 100%;
     }
 }
+
+
+.lang-switcher {
+    position: absolute;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    right: 10px;
+    top: 2px;
+}
+
+.lang-switcher button {
+    background-color: #007bff; /* Primary color */
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.lang-switcher button:hover {
+    background-color: #0056b3; /* Darker shade for hover */
+    transform: scale(1.05); /* Slight scaling effect */
+}
+
+.lang-switcher button:active {
+    background-color: #003d80; /* Even darker shade for active */
+    transform: scale(0.95); /* Slight shrinking effect */
+}
+
+.lang-switcher button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.7); /* Focus glow */
+}
