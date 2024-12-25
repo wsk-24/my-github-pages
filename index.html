@@ -6,8 +6,9 @@
     <title>My Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
+    <script src="my.js"></script>
 </head>
-<body>
+<body onload="switchLang('en')">
     <header>
         <h1>My Portfolio</h1>
         <nav>
@@ -15,54 +16,62 @@
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
         </nav>
+        <div class="lang-switcher">
+            <button onclick="switchLang('en')">EN</button>
+            <button onclick="switchLang('th')">TH</button>
+        </div>
     </header>
 
     <div class="container">
         <section id="about" class="section">
-            <h2>About Me</h2>
-            <p>
+            <h2 data-lang="en">About Me</h2>
+            <h2 data-lang="th" style="display: none;">เกี่ยวกับฉัน</h2>
+            <p data-lang="en">
                 Hello! I'm Worasak Sriworawiboon, a passionate developer with diverse experience in software development and IT solutions. I enjoy creating innovative solutions, learning new technologies, and contributing to impactful projects. Welcome to my portfolio!
             </p>
-            <h3>Skills</h3>
-            <ul>
+            <p data-lang="th" style="display: none;">
+                สวัสดี! ฉันชื่อ วรศักดิ์ ศรีวรวิบูลย์ นักพัฒนาที่มีประสบการณ์หลากหลายในด้านการพัฒนาซอฟต์แวร์และโซลูชันด้าน IT ฉันชื่นชอบการสร้างโซลูชันใหม่ๆ การเรียนรู้เทคโนโลยีใหม่ และการมีส่วนร่วมในโปรเจกต์ที่มีผลกระทบ ยินดีต้อนรับสู่ผลงานของฉัน!
+            </p>
+            <h3 data-lang="en">Skills</h3>
+            <h3 data-lang="th" style="display: none;">ทักษะ</h3>
+            <ul data-lang="en">
                 <li><strong>Programming Languages:</strong> PHP, JavaScript, Kotlin (Layouts XML), Swift (Storyboard), Dart (Beginner), NodeJS, Python (Beginner), C#, ASP.NET, VB.NET</li>
                 <li><strong>Frameworks and Tools:</strong> HTML, CSS, MySQL, Android Studio, Flutter, Google Cloud, Flask, JWT (JSON Web Tokens), Basic Auth, Xcode, Bootstrap, SOAP, Laravel, Express, Socket.IO</li>
                 <li><strong>Development Tools:</strong> VS Code, Visual Studio, Postman, Swagger, IIS, Xampp, Jira, Toad (Oracle), Git</li>
                 <li><strong>Specialized Skills:</strong> Push Notifications, Google Maps API Integration</li>
             </ul>
+            <ul data-lang="th" style="display: none;">
+                <li><strong>ภาษาโปรแกรม:</strong> PHP, JavaScript, Kotlin (Layouts XML), Swift (Storyboard), Dart (เริ่มต้น), NodeJS, Python (เริ่มต้น), C#, ASP.NET, VB.NET</li>
+                <li><strong>Frameworks และเครื่องมือ:</strong> HTML, CSS, MySQL, Android Studio, Flutter, Google Cloud, Flask, JWT (JSON Web Tokens), Basic Auth, Xcode, Bootstrap, SOAP, Laravel, Express, Socket.IO</li>
+                <li><strong>เครื่องมือพัฒนา:</strong> VS Code, Visual Studio, Postman, Swagger, IIS, Xampp, Jira, Toad (Oracle), Git</li>
+                <li><strong>ทักษะเฉพาะทาง:</strong> Push Notifications, Google Maps API Integration</li>
+            </ul>
         </section>
         
-
         <section id="projects" class="section">
-            <h2>Projects</h2>
+            <h2 data-lang="en">Projects</h2>
+            <h2 data-lang="th" style="display: none;">โครงการ</h2>
             <div class="projects">
                 <div class="project-card">
                     <img src="https://via.placeholder.com/300" alt="Project 1">
-                    <div class="content">
+                    <div class="content" data-lang="en">
                         <h3>Project 1</h3>
                         <p>A brief description of the project. Showcase your role and the technologies used.</p>
                     </div>
-                </div>
-                <div class="project-card">
-                    <img src="https://via.placeholder.com/300" alt="Project 2">
-                    <div class="content">
-                        <h3>Project 2</h3>
-                        <p>A brief description of the project. Showcase your role and the technologies used.</p>
+                    <div class="content" data-lang="th" style="display: none;">
+                        <h3>โปรเจกต์ 1</h3>
+                        <p>คำอธิบายสั้นๆ เกี่ยวกับโปรเจกต์ ระบุบทบาทของคุณและเทคโนโลยีที่ใช้</p>
                     </div>
                 </div>
-                <div class="project-card">
-                    <img src="https://via.placeholder.com/300" alt="Project 3">
-                    <div class="content">
-                        <h3>Project 3</h3>
-                        <p>A brief description of the project. Showcase your role and the technologies used.</p>
-                    </div>
-                </div>
+                <!-- Additional Projects -->
             </div>
         </section>
 
         <section id="contact" class="section">
-            <h2>Contact</h2>
-            <p>If you'd like to get in touch, feel free to email me at <a href="mailto:yourname@example.com">worasak.sriworawiboon@gmail.com</a></p>
+            <h2 data-lang="en">Contact</h2>
+            <h2 data-lang="th" style="display: none;">ติดต่อ</h2>
+            <p data-lang="en">If you'd like to get in touch, feel free to email me at <a href="mailto:worasak.sriworawiboon@gmail.com">worasak.sriworawiboon@gmail.com</a></p>
+            <p data-lang="th" style="display: none;">หากคุณต้องการติดต่อฉัน ส่งอีเมลมาที่ <a href="mailto:worasak.sriworawiboon@gmail.com">worasak.sriworawiboon@gmail.com</a></p>
         </section>
     </div>
 
