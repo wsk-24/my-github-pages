@@ -3,541 +3,420 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - Worasak</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="public/css/my.css">
-
-
+    <title>Portfolio - Worasak</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   <link rel="stylesheet" href="public/css/my.css">
 </head>
 <body>
-
-  
-
-
-    <div class="container">
-        <div class="two-column">
-            <!-- Left Column - Profile -->
-            <div class="left-column">
-                <div class="profile-section">
-                    <div class="profile-image">
-                        <img src="public/img/profile/profile.jpg" width="200" height="200" alt="Profile photo">
-                    </div>
-                    <h1>Worasak Sriworawiboon</h1>
-                    <p class="title">Full Stack Developer</p>
-                    <div class="bio">
-                        <p>A passionate full-stack developer with 7+ years of experience, eager to learn new technologies and apply this knowledge to enhance systems.</p>
-                    </div>
-                    <div class="contact-links">
-                        <!-- <a href="mailto:contact@example.com" class="contact-btn">Contact Me</a> -->
-                        <a href="public/pdf/Worasak_Resume.pdf" target="_blank" class="contact-btn">Download CV</a>
-                    </div>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">Portfolio</a>
+                <ul class="nav-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
                 </div>
+            </nav>
+        </div>
+    </header>
 
-                <div>
-                    <section class="section" id="experience">
-                        <h2>Experience</h2>
-                        <div class="grid-container">
-                            <div class="experience-item">
-                                <h3>Senior Developer - Pixel Integration (Hybrid)</h3>
-                                <p>August 2017 - Present</p>
-                                <ul>
-                                  <li>Developed web applications using PHP Laravel Framework, CSS, and HTML to create modern and efficient websites.</li>
-                                  <li>Created native Android applications using Android Studio to support mobile device usage.</li>
-                                  <li>Developed native iOS applications using Xcode for smooth operation on Apple platforms.</li>
-                                  <li>Designed databases to accommodate business growth and adapt to system requirements.</li>
-                                  <li>Managed and maintained servers to ensure smooth and secure system operations.</li>
-                                  <li>Managed and coordinated projects, including delegating tasks to team members effectively.</li>
-                                  <li>Participated in meetings to summarize system requirements and issues, and coordinated with IT teams to resolve problems.</li>
-                                  <li>Analyzed and resolved business system issues to improve performance and stability.</li>
-                                  <li>Created Web Services to support various formats effectively.</li>
-                                </ul>
-                            </div>
-                            <div class="experience-item">
-                                <h3>Junior Developer - Thai Nakarin Hospital (On-Site)</h3>
-                                <p>October 2016 – September 2017</p>
-                                <ul>
-                                  <li>Developed an internal issue reporting system using PHP CodeIgniter Framework to improve communication and problem management.</li>
-                                  <li>Supported PACS and medical document management systems to ensure efficient medical data handling.</li>
-                                  <li>Developed a Windows Application for file management using C# to facilitate data handling.</li>
-                                  <li>Created reports with Crystal Reports to summarize and analyze important data.</li>
-                                </ul>
-                                
-                            </div>
-                            <div class="experience-item">
-                                <h3>Junior Developer - Royal Gems International Co., Ltd (On-Site)</h3>
-                                <p>April 2015 – September 2016</p>
-                                <ul>
-                                  <li>Contributed to developing a Windows Application using C# to support team operations and improve work efficiency.</li>
-                                  <li>Created a Web Application using ASP.Net for sales reporting to simplify tracking and analyzing sales data.</li>
-                                  <li>Developed reports using Crystal Reports for accurate and quick data analysis.</li>
-                                  <li>Provided user support to ensure smooth system operation and issue resolution.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-
-                <div>
-
-                    <section class="section" id="skills">
-                        <h2>Skills</h2>
-                        <div class="skills-grid">
-                            <!-- Programming Languages -->
-                            <div class="skill-item">PHP</div>
-                            <div class="skill-item">JavaScript</div>
-                            <div class="skill-item">Kotlin</div>
-                            <div class="skill-item">Swift</div>
-                            <div class="skill-item">C#</div>
-                            <div class="skill-item">Node.js</div>
-                            <div class="skill-item">Python (Beginner)</div>
-                            <div class="skill-item">Dart (Beginner)</div>
-                            <div class="skill-item">VB.NET</div>
-                            <div class="skill-item">ASP.NET</div>
-                            <div class="skill-item">SQL</div>
-                        
-                            <!-- Frameworks and Tools -->
-                            <div class="skill-item">HTML</div>
-                            <div class="skill-item">CSS</div>
-                            <div class="skill-item">Bootstrap</div>
-                            <div class="skill-item">MySQL</div>
-                            <div class="skill-item">Android Studio</div>
-                            <div class="skill-item">Xcode</div>
-                            <div class="skill-item">Flutter</div>
-                            <div class="skill-item">Firebase</div>
-                            <div class="skill-item">Google Cloud</div>
-                            <div class="skill-item">Laravel</div>
-                            <div class="skill-item">Flask</div>
-                            <div class="skill-item">Express</div>
-                            <div class="skill-item">Socket.IO</div>
-                            <div class="skill-item">Postman</div>
-                            <div class="skill-item">Swagger</div>
-                            <div class="skill-item">VS Code</div>
-                            <div class="skill-item">Visual Studio</div>
-                            <div class="skill-item">Jira</div>
-                            <div class="skill-item">Toad (Oracle)</div>
-                            <div class="skill-item">SOAP</div>
-                            <div class="skill-item">Restful APIs</div>
-                            <div class="skill-item">Git</div>
-                            <div class="skill-item">IIS</div>
-                            <div class="skill-item">Xampp</div>
-                            <div class="skill-item">Push Notifications</div>
-                            <div class="skill-item">Google Maps</div>
-                            <div class="skill-item">JWT</div>
-                            <div class="skill-item">Basic Auth</div>
-                            <div class="skill-item">AWS (EC2 , Route 53)</div>
-                        </div>
-                        
-                    </section>
-                </div>
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Hi, I'm Worasak Sriworawiboon</h1>
+                <h2 class="hero-subtitle">Full Stack Developer</h2>
+                <p class="hero-text">I enjoy learning about programming and new technologies.</p>
+                <a href="#contact" class="btn hero-cta">Get in Touch</a>
             </div>
+            <!-- <img src="https://via.placeholder.com/500" alt="Hero Image" class="hero-image"> -->
+        </div>
+    </section>
 
-            <!-- Right Column - Projects -->
-            <div class="right-column">
-                <div class="projects-grid">
-                    <div class="project-item">
-                        <div class="project-image-container">
-                          <div class="row">
-                            <!-- Gallery Item 1 -->
-                            <div class="col-md-4 mb-3">
-                              <img src="public/img/projects/med1.png" class="img-fluid rounded gallery-item" alt="Gallery Image 1" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-image="public/img/projects/med1.png">
-                            </div>
-                            <!-- Gallery Item 2 -->
-                            <div class="col-md-4 mb-3">
-                              <img src="public/img/projects/med2.png" class="img-fluid rounded gallery-item" alt="Gallery Image 2" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-image="public/img/projects/med2.png">
-                            </div>
-                            <!-- Gallery Item 3 -->
-                            <div class="col-md-4 mb-3">
-                              <img src="public/img/projects/med3.png" class="img-fluid rounded gallery-item" alt="Gallery Image 3" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-image="public/img/projects/med3.png">
-                            </div>
-
-                            <div class="col-md-4 mb-3">
-                              <img src="public/img/projects/med4.png" class="img-fluid rounded gallery-item" alt="Gallery Image 3" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-image="public/img/projects/med4.png">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="project-content">
-                            <h3>MedImage | Full-Stack Developer & Team</h3>
-                            <p>A system for doctors and medical students to record medical procedures, featuring image capture and various tools such as Pencil, Color, Template, Camera Guide, Crop, Clipboard, and real-time integration with hospital HIS systems.</p>
-                            <ul>
-                                <li>Developed an admin management system using HTML and CSS frameworks.</li>
-                                <li>Created a user-facing application using Native Kotlin, featuring basic functions such as drawing, menu, search, usage history, QR Code and barcode scanning.</li>
-                                <li>Implemented image-to-PDF conversion and data transmission through hospital APIs.</li>
-                                <li>Developed APIs to retrieve data from hospital systems and send data to the frontend using PHP.</li>
-                                <li>Built backend management system in PHP.</li>
-                                <li>Installed the system on the client’s server.</li>
-                                <li>Deployed on Google Play Store [KCMH MedImage].</li>
-                            </ul>
-                            <div class="project-tech">
-                                <span class="tech-tag">Swift</span>
-                                <span class="tech-tag">Kotlin</span>
-                                <span class="tech-tag">PHP</span>
-                                <span class="tech-tag">Soap</span>
-                            </div>
-                            <!-- <div class="project-links">
-                                <a href="#" class="project-link">Live Demo →</a>
-                                <a href="#" class="project-link">GitHub →</a>
-                            </div> -->
-                        </div>
-                    </div>
-
-                    <div class="project-item">
-                        <div class="project-image-container">
-                          <div class="row">
-                            <!-- Gallery Item 1 -->
-                            <div class="col-md-4 mb-3">
-                              <img src="public/img/projects/eye1.jpg" class="img-fluid rounded gallery-item" alt="Gallery Image 1" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-image="public/img/projects/eye1.jpg">
-                            </div>
-
-                            <div class="col-md-4 mb-3">
-                              <img src="public/img/projects/eye2.jpg" class="img-fluid rounded gallery-item" alt="Gallery Image 1" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-image="public/img/projects/eye2.jpg">
-                            </div>
-
-                            <div class="col-md-4 mb-3">
-                              <img src="public/img/projects/eye3.jpg" class="img-fluid rounded gallery-item" alt="Gallery Image 1" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-image="public/img/projects/eye3.jpg">
-                            </div>
-
-                            <div class="col-md-4 mb-3">
-                              <img src="public/img/projects/eye4.jpg" class="img-fluid rounded gallery-item" alt="Gallery Image 1" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-image="public/img/projects/eye4.jpg">
-                            </div>
-
-                            <div class="col-md-4 mb-3">
-                              <img src="public/img/projects/eye5.jpg" class="img-fluid rounded gallery-item" alt="Gallery Image 1" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-image="public/img/projects/eye5.jpg">
-                            </div>
-                          </div>
-
-
-                           
-                        </div>
-                        <div class="project-content">
-                            <h3>EyeQ System | Full-Stack Developer & Team</h3>
-                            <p>Collaborative task management platform with real-time updates and team features.</p>
-                            <ul>
-                                <li>Developed a user-facing application using Native Kotlin, featuring real-time queue calling, displaying patient information for the current queue, and a screen for showing patients who have been skipped.</li>
-                                <li>Integrated with hospital APIs (SOAP Service).</li>
-                                <li>Created a queue registration system for examination rooms using PHP.</li>
-                                <li>Developed real-time display screens using PHP.</li>
-                                <li>Built backend management system in PHP.</li>
-                                <li>Generated Excel files for RPA (Robotic Process Automation) use.</li>
-                                <li>Installed the system on the client’s server.</li>
-                            </ul>
-                              
-                            <div class="project-tech">
-                                <span class="tech-tag">PHP</span>
-                                <span class="tech-tag">Node.js</span>
-                                <span class="tech-tag">Socket.IO</span>
-                                <span class="tech-tag">Kotlin</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="public/video/eye1.mp4" target="_blank" class="project-link">Video(1) →</a>
-                               
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-item">
-                        <div class="project-image-container">
-                          <div class="row">
-                            <!-- Gallery Item 1 -->
-                            <div class="col-md-4 mb-3">
-                              <img src="public/img/projects/pacc1.png" class="img-fluid rounded gallery-item" alt="Gallery Image 1" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-image="public/img/projects/pacc1.png">
-                            </div>
-                            <!-- Gallery Item 2 -->
-                            <div class="col-md-4 mb-3">
-                              <img src="public/img/projects/pacc2.png" class="img-fluid rounded gallery-item" alt="Gallery Image 2" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-image="public/img/projects/pacc2.png">
-                            </div>
-                           
-                          </div>
-                        </div>
-                        <div class="project-content">
-                            <h3>PACC | Full-Stack Developer & Team</h3>
-                            <p>Complaint Notification System: Management of Anti-Corruption Civil Society Network System.</p>
-                            <div class="project-tech">
-                                <span class="tech-tag">PHP</span>
-                                <span class="tech-tag">Swift</span>
-                                <span class="tech-tag">Kotlin</span>
-                            </div>
-                            <!-- <div class="project-links">
-                                <a href="#" class="project-link">Live Demo →</a>
-                                <a href="#" class="project-link">GitHub →</a>
-                            </div> -->
-                        </div>
-                    </div>
-
-                    <div class="project-item">
-                        <div class="project-image-container">
-                          <div class="row">
-                            <!-- Gallery Item 1 -->
-                            <div class="col-md-4 mb-3">
-                              <img src="public/img/projects/assessment1.png" class="img-fluid rounded gallery-item" alt="Gallery Image 1" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-image="public/img/projects/assessment1.png">
-                            </div>
-                            <!-- Gallery Item 2 -->
-                            <div class="col-md-4 mb-3">
-                              <img src="public/img/projects/assessment2.jpg" class="img-fluid rounded gallery-item" alt="Gallery Image 2" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-image="public/img/projects/assessment2.jpg">
-                            </div>
-                            <div class="col-md-4 mb-3">
-                              <img src="public/img/projects/assessment3.jpg" class="img-fluid rounded gallery-item" alt="Gallery Image 2" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-image="public/img/projects/assessment3.jpg">
-                            </div>
-                           
-                          </div>
-                        </div>
-                        <div class="project-content">
-                            <h3>Assessment | Full-Stack Developer & Team</h3>
-                            <p>Employee Evaluation System.</p>
-                            <ul>
-                                <li>Developed a system for management for users using PHP Laravel.</li>
-                                <li>Integrated authentication restful APIs</li>
-                            </ul>
-                            <div class="project-tech">
-                                <span class="tech-tag">Laravel</span>
-                                <span class="tech-tag">Restful</span>
-                            </div>
-                            <!-- <div class="project-links">
-                                <a href="#" class="project-link">Live Demo →</a>
-                                <a href="#" class="project-link">GitHub →</a>
-                            </div> -->
-                        </div>
-                    </div>
-
-                    <div class="project-item">
-                        <div class="project-image-container">
-                          <div class="row">
-                            <!-- Gallery Item 1 -->
-                            <div class="col-md-4 mb-3">
-                              <img src="public/img/projects/emr1.jpg" class="img-fluid rounded gallery-item" alt="Gallery Image 1" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-image="public/img/projects/emr1.jpg">
-                            </div>
-                            <!-- Gallery Item 2 -->
-                            <div class="col-md-4 mb-3">
-                              <img src="public/img/projects/emr2.png" class="img-fluid rounded gallery-item" alt="Gallery Image 2" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-image="public/img/projects/emr2.png">
-                            </div>
-                            <div class="col-md-4 mb-3">
-                              <img src="public/img/projects/emr3.png" class="img-fluid rounded gallery-item" alt="Gallery Image 2" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-image="public/img/projects/emr3.png">
-                            </div>
-                           
-                          </div>
-                        </div>
-                        <div class="project-content">
-                            <h3>EMR | Full-Stack Developer</h3>
-                            <p>Patient Medical Record Management System.</p>
-                            <ul>
-                              <li>Developed a system for management for users using PHP</li>
-                              <li>Integrated authentication restful APIs</li>
-                            </ul>
-                           
-                              
-                            <div class="project-tech">
-                                <span class="tech-tag">Html</span>
-                                <span class="tech-tag">CSS</span>
-                                <span class="tech-tag">JavaScript</span>
-                                <span class="tech-tag">PHP</span>
-                                <span class="tech-tag">Laravel</span>
-                            </div>
-                            <!-- <div class="project-links">
-                                <a href="#" class="project-link">Live Demo →</a>
-                                <a href="#" class="project-link">GitHub →</a>
-                            </div> -->
-                        </div>
-                    </div>
-
-                    <div class="project-item">
-                        <div class="project-image-container">
-                          <div class="row">
-                            <!-- Gallery Item 1 -->
-                            <div class="col-md-4 mb-3">
-                              <img src="public/img/projects/econ1.png" class="img-fluid rounded gallery-item" alt="Gallery Image 1" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-image="public/img/projects/econ1.png">
-                            </div>
-                            <!-- Gallery Item 2 -->
-                            <div class="col-md-4 mb-3">
-                              <img src="public/img/projects/econ2.jpg" class="img-fluid rounded gallery-item" alt="Gallery Image 2" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-image="public/img/projects/econ2.jpg">
-                            </div>
-                            <!-- Gallery Item 3 -->
-                            <div class="col-md-4 mb-3">
-                              <img src="public/img/projects/econ3.jpg" class="img-fluid rounded gallery-item" alt="Gallery Image 3" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-image="public/img/projects/econ3.jpg">
-                            </div>
-                            <div class="col-md-4 mb-3">
-                              <img src="public/img/projects/econ4.jpg" class="img-fluid rounded gallery-item" alt="Gallery Image 3" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-image="public/img/projects/econ4.jpg">
-                            </div>
-                            <div class="col-md-4 mb-3">
-                              <img src="public/img/projects/econ5.jpg" class="img-fluid rounded gallery-item" alt="Gallery Image 3" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-image="public/img/projects/econ5.jpg">
-                            </div>
-                            <div class="col-md-4 mb-3">
-                              <img src="public/img/projects/econ6.jpg" class="img-fluid rounded gallery-item" alt="Gallery Image 3" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-image="public/img/projects/econ6.jpg">
-
-                              
-                            </div>
-                            <div class="col-md-4 mb-3">
-                              <img src="public/img/projects/econ7.png" class="img-fluid rounded gallery-item" alt="Gallery Image 3" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-image="public/img/projects/econ7.jpg">
-
-                              
-                            </div>
-                          </div>
-                        </div>
-                        <div class="project-content">
-                            <h3>Econsents | Full-Stack Developer</h3>
-                            <p>A system for creating medical consent documents and managing backend forms.</p>
-                            <ul>
-                                <li>Developed a system for creating medical consent documents for users using PHP Laravel.</li>
-                                <li>Implemented PDF generation.</li>
-                                <li>Created a form management system for handling additional data using PHP Laravel.</li>
-                                <li>Installed the system on the client’s server.</li>
-                                <li>Integrated and transmitted data through hospital APIs (SOAP Service).</li>
-                            </ul>
-
-                              
-                            <div class="project-tech">
-                                <span class="tech-tag">Laravel</span>
-                                <span class="tech-tag">Soap</span>
-                                <span class="tech-tag">Restful</span>
-                                <span class="tech-tag">Kotlin</span>
-                                <span class="tech-tag">Java</span>
-                            </div>
-                            <!-- <div class="project-links">
-                                <a href="#" class="project-link">Live Demo →</a>
-                                <a href="#" class="project-link">GitHub →</a>
-                            </div> -->
-                        </div>
-                    </div>
-
-                    <!-- START : PROJECT ITEM -->
-                    <div class="project-item">
-                        <div class="project-image-container">
-                          <div class="row">
-                            <!-- Gallery Item 1 -->
-                            <div class="col-md-4 mb-3">
-                              <img src="public/img/projects/colmi1.jpg" class="img-fluid rounded gallery-item" alt="Gallery Image 1" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-image="public/img/projects/colmi1.jpg">
-                            </div>
-                            <!-- Gallery Item 2 -->
-                            <div class="col-md-4 mb-3">
-                              <img src="public/img/projects/colmi2.jpg" class="img-fluid rounded gallery-item" alt="Gallery Image 2" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-image="public/img/projects/colmi2.jpg">
-                            </div>
-                            <!-- Gallery Item 3 -->
-                            <div class="col-md-4 mb-3">
-                              <img src="public/img/projects/colmi3.jpg" class="img-fluid rounded gallery-item" alt="Gallery Image 3" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-image="public/img/projects/colmi3.jpg">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="project-content">
-                            <h3>Integrating the Colmi Smart Ring API with Python (Demo)</h3>
-                            <p>
-                                <p>Referencing:</p>
-                                <ul>
-                                <li>
-                                    <a href="https://github.com/tahnok/colmi_r02_client" target="_blank">GitHub Repository: tahnok/colmi_r02_client</a>
-                                </li>
-                                <li>
-                                    <a href="https://tahnok.github.io/colmi_r02_client/colmi_r02_client.html" target="_blank">Documentation: tahnok.github.io/colmi_r02_client</a>
-                                </li>
-                                </ul>
-
-                            </p>
-                            <div class="project-tech">
-                                <span class="tech-tag">Python</span>
-                            </div>
-                            <!-- <div class="project-links">
-                                <a href="#" class="project-link">Live Demo →</a>
-                                <a href="#" class="project-link">GitHub →</a>
-                            </div> -->
-                        </div>
-                    </div>
-                    <!-- END : PROJECT ITEM -->
-
-                    <!-- START : PROJECT ITEM -->
-                    <div class="project-item">
-                        <div class="project-image-container">
-                          <div class="row">
-                            <!-- Gallery Item 1 -->
-                            <div class="col-md-4 mb-3">
-                              <img src="public/img/projects/tracking1.png" class="img-fluid rounded gallery-item" alt="Gallery Image 1" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-image="public/img/projects/tracking1.png">
-                            </div>
-                            <!-- Gallery Item 2 -->
-                            <div class="col-md-4 mb-3">
-                              <img src="public/img/projects/tracking2.png" class="img-fluid rounded gallery-item" alt="Gallery Image 2" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-image="public/img/projects/tracking2.png">
-                            </div>
-                            <div class="col-md-4 mb-3">
-                              <img src="public/img/projects/tracking3.png" class="img-fluid rounded gallery-item" alt="Gallery Image 2" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-image="public/img/projects/tracking3.png">
-                            </div>
-                           
-                          </div>
-                        </div>
-                        <div class="project-content">
-                            <h3>Tracking Prototype App</h3>
-                            <p>A system for tracking with patient transporter.</p>
-                            <div class="project-tech">
-                                <span class="tech-tag">Kotlin</span>
-                            </div>
-                            <!-- <div class="project-links">
-                                <a href="#" class="project-link">Live Demo →</a>
-                                <a href="#" class="project-link">GitHub →</a>
-                            </div> -->
-                        </div>
-                    </div>
-                    <!-- END : PROJECT ITEM -->
-
-
-                    <!-- START : PROJECT ITEM -->
-                    <div class="project-item">
-                      <div class="project-image-container">
-                        <div class="row">
-                          <!-- Gallery Item 1 -->
-                          <div class="col-md-4 mb-3">
-                            <img src="public/img/projects/merge1.jpg" class="img-fluid rounded gallery-item" alt="Gallery Image 1" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-image="public/img/projects/merge1.jpg">
-                          </div>
-                          <!-- Gallery Item 2 -->
-                          <div class="col-md-4 mb-3">
-                            <img src="public/img/projects/merge2.jpg" class="img-fluid rounded gallery-item" alt="Gallery Image 2" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-image="public/img/projects/merge2.jpg">
-                          </div>
-                        
-                         
-                        </div>
-                      </div>
-                      <div class="project-content">
-                          <h3>Merge & Watermark PDF</h3>
-                          <p>An API for merging PDFs and adding watermarks to PDFs, configured with IIS.</p>
-                          <div class="project-tech">
-                              <span class="tech-tag">Python</span>
-                          </div>
-                          
-                          <div class="project-links">
-                              <a href="public/pdf/file_1.pdf" target="_blank" class="project-">Example >> File1</a>
-                              <a href="public/pdf/file_2.pdf" target="_blank" class="project-">Example >> File2</a>
-                              <a href="public/pdf/file_2.pdf" target="_blank" class="project-">Result Merge</a>
-                              <a href="public/pdf/file_2.pdf" target="_blank" class="project-">Result Watermark</a>
-                          </div>
-
-                           <div class="project-links">
-                              <a href="https://github.com/wsk-24/MergeX_Watermark.git" target="_blank" class="project-link">GitHub →</a>
-                            </div>
-                      </div>
-                  </div>
-                  <!-- END : PROJECT ITEM -->
-                   
-
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="public/img/profile/picture.jpg" width="200" alt="About Image">
+                </div>
+                <div class="about-text">
+                    <h3>Who I Am</h3>
+                    <p>I specialize in creating user-friendly, responsive websites.</p>
+                    <p>With 9 years of experience, I’ve worked on various projects ranging from small business sites to complex web applications.</p>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- Fullscreen Modal with Custom Size -->
-<div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-fullscreen-custom">
-    <div class="modal-content">
-      <div class="modal-body p-0">
-        <img id="modalImage" src="" class="modalImage" alt="Fullscreen Image">
-      </div>
-    </div>
-  </div>
-</div>
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-container">
+    
+                <div class="skill-card">
+                    <i class="fas fa-code skill-icon"></i>
+                    <h3 class="skill-title">Frontend Development</h3>
+                    <ul class="skill-list">
+                        <li>HTML5 & CSS3</li>
+                        <li>JavaScript</li>
+                        <li>Bootstrap</li>
+                        <li>React.js</li>
+                        <li>Flutter - Basic</li>
+                    </ul>
+                </div>
+    
+                <div class="skill-card">
+                    <i class="fas fa-server skill-icon"></i>
+                    <h3 class="skill-title">Backend Development</h3>
+                    <ul class="skill-list">
+                        <li>PHP (Laravel)</li>
+                        <li>Node.js (Express)</li>
+                        <li>Python (Flask)</li>
+                        <li>ASP.NET & C#</li>
+                    </ul>
+                </div>
+    
+                <div class="skill-card">
+                    <i class="fas fa-database skill-icon"></i>
+                    <h3 class="skill-title">Database Management</h3>
+                    <ul class="skill-list">
+                        <li>MySQL</li>
+                        <li>PostgreSQL</li>
+                        <li>MongoDB</li>
+                        <li>Oracle (Toad)</li>
+                    </ul>
+                </div>
+    
+                <div class="skill-card">
+                    <i class="fas fa-mobile-alt skill-icon"></i>
+                    <h3 class="skill-title">Mobile Development</h3>
+                    <ul class="skill-list">
+                        <li>Android (Kotlin, Java)</li>
+                        <li>iOS (Swift, Xcode)</li>
+                        <li>Flutter (Dart) - Basic</li>
+                    </ul>
+                </div>
+    
+                <div class="skill-card">
+                    <i class="fas fa-cloud skill-icon"></i>
+                    <h3 class="skill-title">Cloud & DevOps</h3>
+                    <ul class="skill-list">
+                        <li>AWS (EC2, Route53)</li>
+                        <li>Google Cloud</li>
+                        <li>IIS & XAMPP</li>
+                        <li>Git & Version Control</li>
+                    </ul>
+                </div>
+    
+                <div class="skill-card">
+                    <i class="fas fa-tools skill-icon"></i>
+                    <h3 class="skill-title">Tools & Other Skills</h3>
+                    <ul class="skill-list">
+                        <li>Postman & Swagger</li>
+                        <li>Jira</li>
+                        <li>SOAP & REST APIs</li>
+                        <li>JWT & Basic Auth</li>
+                        <li>Socket.IO</li>
+                        <li>Push Notifications</li>
+                        <li>Google Maps API</li>
+                    </ul>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+    
 
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="public/img/projects/med1.png" width="350" height="250" alt="MedImage">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">MedImage | Full-Stack Developer</h3>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">Swift</span>
+                            <span class="project-tag">Kotlin</span>
+                            <span class="project-tag">PHP</span>
+                            <span class="project-tag">Soap</span>
+                        </div>
+                        <p class="project-description">A system for doctors and medical students to record medical procedures, featuring image capture and various tools such as Pencil, Color, Template, Camera Guide, Crop, Clipboard, and real-time integration with hospital HIS systems.</p>
+                        <div class="project-links">
+                            <!-- <a href="#">Live Demo</a> -->
+                            <!-- <a href="#">Source Code</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                      <img src="public/img/projects/eye3.jpg" width="350" height="250" alt="EyeQ">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">EyeQ System | Full-Stack Developer</h3>
+                        <div class="project-tags">
+                          <span class="project-tag">HTML</span>
+                          <span class="project-tag">CSS</span>
+                          <span class="project-tag">JavaScript</span>
+                          <span class="project-tag">PHP</span>
+                          <span class="project-tag">Node.js</span>
+                          <span class="project-tag">Socket.IO</span>
+                          <span class="project-tag">Kotlin</span>
+                        </div>
+                        <p class="project-description">Developed a user-facing application using Native Kotlin, featuring real-time queue calling, displaying patient information for the current queue, and a screen for showing patients who have been skipped.</p>
+                        <div class="project-links">
+                            <!-- <a href="#">Live Demo</a> -->
+                            <!-- <a href="#">Source Code</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                  <div class="project-image">
+                    <img src="public/img/projects/pacc1.png" width="350" height="250" alt="PACC">
+                  </div>
+                    <div class="project-content">
+                        <h3 class="project-title">PACC | Full-Stack Developer</h3>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">PHP</span>
+                            <span class="project-tag">Swift</span>
+                            <span class="project-tag">Kotlin</span>
+                        </div>
+                        <p class="project-description">Complaint Notification System: Management of Anti-Corruption Civil Society Network System.</p>
+                        <div class="project-links">
+                            <a href="#">Live Demo</a>
+                            <a href="#">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                  <div class="project-image">
+                    <img src="public/img/projects/assessment2.jpg" width="350" height="250" alt="Assessment">
+                  </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Assessment | Full-Stack Developer</h3>
+                        <div class="project-tags">
+                          <span class="project-tag">HTML</span>
+                          <span class="project-tag">CSS</span>
+                          <span class="project-tag">JavaScript</span>
+                          <span class="project-tag">Laravel</span>
+                          <span class="project-tag">Restful</span>
+                        </div>
+                        <p class="project-description">Staff & Doctor Evaluation System.</p>
+                        <div class="project-links">
+                            <!-- <a href="#">Live Demo</a> -->
+                            <!-- <a href="#">Source Code</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                      <img src="public/img/projects/emr1.jpg" width="350" height="250" alt="EMR">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">EMR | Full-Stack Developer</h3>
+                        <div class="project-tags">
+                            <span class="project-tag">Html</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">PHP</span>
+                            <span class="project-tag">Laravel</span>
+                        </div>
+                        <p class="project-description">Patient Medical Record Management System.</p>
+                        <div class="project-links">
+                            <!-- <a href="#">Live Demo</a> -->
+                            <!-- <a href="#">Source Code</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                      <img src="public/img/projects/econ3.jpg" width="350" height="250" alt="Econsents">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Econsents | Full-Stack Developer</h3>
+                        <div class="project-tags">
+                          <span class="project-tag">Html</span>
+                          <span class="project-tag">CSS</span>
+                          <span class="project-tag">JavaScript</span>
+                          <span class="project-tag">Laravel</span>
+                          <span class="project-tag">Soap</span>
+                          <span class="project-tag">Restful</span>
+                          <span class="project-tag">Kotlin</span>
+                          <span class="project-tag">Java</span>
+                        </div>
+                        <p class="project-description">A system for creating medical consent documents and managing backend forms.</p>
+                        <div class="project-links">
+                            <!-- <a href="#">Live Demo</a> -->
+                            <!-- <a href="#">Source Code</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                      <img src="public/img/projects/econ3.jpg" width="350" height="250" alt="Econsents">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Integrating the Colmi Smart Ring API with Python (Demo)</h3>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                        </div>
+                        <p class="project-description">To retrieve data from the API for further processing.</p>
+
+  
+                        <div class="project-links">
+                            <!-- <a href="#">Live Demo</a> -->
+                            <!-- <a href="#">Source Code</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                      <img src="public/img/projects/tracking1.png" width="350" height="250" alt="Tracking">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Tracking Prototype App</h3>
+                        <div class="project-tags">
+                            <span class="project-tag">Kotlin</span>
+                        </div>
+                        <p class="project-description">A system for tracking with patient transporter.</p>
+                        <div class="project-links">
+                            <!-- <a href="#">Live Demo</a> -->
+                            <!-- <a href="#">Source Code</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                      <img src="public/img/projects/merge1.jpg" width="350" height="250" alt="Merge">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Merge & Watermark PDF</h3>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                        </div>
+                        <p class="project-description">A full-stack web application with dynamic features.</p>
+                        <div class="project-links">
+                            <!-- <a href="#">Live Demo</a> -->
+                            <a href="https://github.com/wsk-24/MergeX_Watermark.git" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3 class="contact-title">Let's Connect</h3>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope contact-icon"></i>
+                            <span>worasak.sriworawiboon@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone contact-icon"></i>
+                            <span>080-569-8125</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <!-- <a href="#" class="social-link"><i class="fab fa-twitter"></i></a> -->
+                    </div>
+                </div>
+                <!-- <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" placeholder="Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <ul class="footer-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <p class="copyright">© 2025 Worasak. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- JavaScript -->
+    <script>
+        // Hamburger Menu
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Header Scroll Effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            header.classList.toggle('scrolled', window.scrollY > 50);
+
+            // Back to Top Button
+            const backToTop = document.querySelector('.back-to-top');
+            backToTop.classList.toggle('active', window.scrollY > 300);
+        });
+
+        // Scroll Animation
+        const animateOnScroll = () => {
+            const elements = document.querySelectorAll('.about-image, .about-text, .skill-card, .project-card, .contact-info, .contact-form');
+            elements.forEach(el => {
+                const rect = el.getBoundingClientRect();
+                if (rect.top <= window.innerHeight * 0.8) {
+                    el.classList.add('animated');
+                }
+            });
+        };
+
+        window.addEventListener('scroll', animateOnScroll);
+        window.addEventListener('load', animateOnScroll);
+    </script>
 </body>
 </html>
-
-<script>
-  // Set modal image when an item is clicked
-document.querySelectorAll('.gallery-item').forEach(item => {
-  item.addEventListener('click', function() {
-    const imageSrc = this.getAttribute('data-bs-image');
-    document.getElementById('modalImage').setAttribute('src', imageSrc);
-  });
-});
-</script>
