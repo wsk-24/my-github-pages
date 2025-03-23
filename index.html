@@ -212,6 +212,7 @@
                         <div class="project-links">
                             <!-- <a href="#">Live Demo</a> -->
                             <!-- <a href="#">Source Code</a> -->
+                            <a href="javascript:void(0)" onclick="openModalVideo('public/video/eye1.mp4')">Play Video</a>
                         </div>
                     </div>
                 </div>
@@ -242,6 +243,7 @@
                         <div class="project-links">
                             <!-- <a href="#">Live Demo</a> -->
                             <!-- <a href="#">Source Code</a> -->
+                           
                         </div>
                     </div>
                 </div>
@@ -262,9 +264,7 @@
                         <div class="gallery-item">
                             <img src="public/img/projects/econ5.jpg" width="300" height="200" alt="Image 1">
                         </div>
-                        <div class="gallery-item">
-                            <img src="public/img/projects/econ6.jpg" width="300" height="200" alt="Image 1">
-                        </div>
+                      
                         <div class="gallery-item">
                             <img src="public/img/projects/econ7.png" width="300" height="200" alt="Image 1">
                         </div>
@@ -312,7 +312,13 @@
                                 <li>https://github.com/edgeimpulse/example-data-collection-colmi-r02</li>
                                 <li>https://tahnok.github.io/colmi_r02_client/colmi_r02_client.html</li>
                             </ul>
+
+
+                           
                         </div>
+
+
+                       
   
                         <div class="project-links">
                             <!-- <a href="#">Live Demo</a> -->
@@ -379,11 +385,22 @@
                             <span class="project-tag">Kotlin</span>
                         </div>
                         <p class="project-description">A connect to the video conference API service to enable doctors and patients to communicate via video conference.</p>
-                        <div class="project-links">
+
+                        <div class="ms-2">
+                            <h5>Reference</h5>
+                            <ul>
+                                <li>https://www.cometchat.com/docs/ui-kit/android/v5/overview</li>
+                            </ul>
+                        </div>
+
+                        <div class="project-links mt-2">
                             <!-- <a href="#">Live Demo</a> -->
                             <a href="https://github.com/wsk-24/MergeX_Watermark.git" target="_blank">GitHub</a>
                         </div>
+
+                        
                     </div>
+                  
                 </div>
                 <div class="project-card">
                     <div class="gallery">
@@ -443,7 +460,7 @@
                 <div class="project-card">
                     <div class="gallery">
                         <div class="gallery-item">
-                            <img src="public/img/projects/emr1.jpg" width="300" height="200" alt="Image 1">
+                            <img src="public/img/projects/register.png" width="300" height="200" alt="Image 1">
                         </div>
                        
                     </div>
@@ -456,14 +473,47 @@
                         <p class="project-description">A page for registering members through an API.</p>
                         <div class="project-links">
                             <!-- <a href="#">Live Demo</a> -->
-                            <a href="https://github.com/wsk-24/MergeX_Watermark.git" target="_blank">GitHub</a>
+                            <a href="https://github.com/wsk-24/MemberReact.git" target="_blank">GitHub</a>
+                            <a href="https://github.com/wsk-24/MemberExpress.git" target="_blank">GitHub</a>
+                            <a href="javascript:void(0)" onclick="openModalVideo('public/video/register1.mp4')">Play Video</a>
                         </div>
                     </div>
                 </div>
                 <div class="project-card">
                     <div class="gallery">
                         <div class="gallery-item">
-                            <img src="public/img/projects/emr1.jpg" width="300" height="200" alt="Image 1">
+                            <img src="public/img/projects/map1.png" width="300" height="200" alt="Image 1">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="public/img/projects/map2.png" width="300" height="200" alt="Image 1">
+                        </div>
+                       
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">My Map (Learning)</h3>
+                        <div class="project-tags">
+                            <span class="project-tag">React Vite</span>
+                            <span class="project-tag">Node.js</span>
+                        </div>
+                        <p class="project-description">A page for markers map through an API, learning how to integrate Google Maps with Node.js and React.</p>
+                        <div class="project-links">
+                            <!-- <a href="#">Live Demo</a> -->
+                            <a href="https://github.com/wsk-24/MyMapReact.git" target="_blank">GitHub</a>
+                            <a href="https://github.com/wsk-24/MyMapExpress.git" target="_blank">GitHub</a>
+
+                            <!-- ปุ่มเพื่อเปิด modal -->
+                            <a href="javascript:void(0)" onclick="openModalVideo('public/video/map.mp4')">Play Video</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="gallery">
+                        <div class="gallery-item">
+                            <img src="public/img/projects/id_card.jpg" width="300" height="200" alt="Image 1">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="public/img/projects/id_card1.jpg" width="300" height="200" alt="Image 1">
                         </div>
                         
                     </div>
@@ -487,7 +537,10 @@
                 <div class="project-card">
                     <div class="gallery">
                         <div class="gallery-item">
-                            <img src="public/img/projects/emr1.jpg" width="300" height="200" alt="Image 1">
+                            <img src="public/img/projects/viewoffline.jpg" width="300" height="200" alt="Image 1">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="public/img/projects/viewoffline1.jpg" width="300" height="200" alt="Image 1">
                         </div>
                        
                     </div>
@@ -551,6 +604,18 @@
         <img class="modal-content" id="fullImage">
     </div>
 
+    <!-- Modal สำหรับแสดงวิดีโอ -->
+    <div class="modal-v" id="videoModal">
+        <div class="modal-content-v">
+            <span class="close-v" onclick="closeModalVideo()">&times;</span>
+            <video id="modalVideo" class="modal-video" controls>
+                <source id="videoSource" src="" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -571,40 +636,41 @@
     <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
 
     <!-- JavaScript -->
+    <script src="public/js/my.js"></script>
     <script>
 
-         // Get elements
-const galleryItems = document.querySelectorAll('.gallery-item');
-const modal = document.querySelector('.modal');
-const modalImg = document.getElementById('fullImage');
-const closeBtn = document.querySelector('.close');
+        // Get elements
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        const modal = document.querySelector('.modal');
+        const modalImg = document.getElementById('fullImage');
+        const closeBtn = document.querySelector('.close');
 
-// Add click event to each gallery item
-galleryItems.forEach(item => {
-    item.addEventListener('click', function() {
-        modal.style.display = 'block';
-        modalImg.src = this.querySelector('img').src;
-    });
-});
+        // Add click event to each gallery item
+        galleryItems.forEach(item => {
+            item.addEventListener('click', function() {
+                modal.style.display = 'block';
+                modalImg.src = this.querySelector('img').src;
+            });
+        });
 
-// Close modal when clicking the close button
-closeBtn.addEventListener('click', function() {
-    modal.style.display = 'none';
-});
+        // Close modal when clicking the close button
+        closeBtn.addEventListener('click', function() {
+            modal.style.display = 'none';
+        });
 
-// Close modal when clicking outside the image
-modal.addEventListener('click', function(e) {
-    if (e.target === modal) {
-        modal.style.display = 'none';
-    }
-});
+        // Close modal when clicking outside the image
+        modal.addEventListener('click', function(e) {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
 
-// Close modal with Escape key
-document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape' && modal.style.display === 'block') {
-        modal.style.display = 'none';
-    }
-});
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && modal.style.display === 'block') {
+                modal.style.display = 'none';
+            }
+        });
 
         document.addEventListener('DOMContentLoaded', () => {
             const moveSlide = (button, direction) => {

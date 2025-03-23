@@ -791,6 +791,49 @@ text-decoration: none !important;
     animation: zoomIn 0.3s;
 }
 
+/* Modal */
+.modal-v {
+    display: none; /* ซ่อน modal เริ่มต้น */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* พื้นหลังมืด */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content-v {
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 90%;
+    max-height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-video {
+    max-width: 800%;
+    max-height: 60vh;
+    border-radius: 5px;
+}
+
+.close-v {
+    position: absolute;
+    top: -50px;
+    right: -160px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
 .close {
     position: absolute;
     top: 15px;
