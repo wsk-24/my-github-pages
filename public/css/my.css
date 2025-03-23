@@ -788,7 +788,9 @@ text-decoration: none !important;
     display: block;
     width: 80%;
     max-width: 700px;
+    max-height: 90%;
     animation: zoomIn 0.3s;
+    object-fit: contain;
 }
 
 /* Modal */
