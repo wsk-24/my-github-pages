@@ -1,1448 +1,904 @@
-<!DOCTYPE HTML>
-<!--
-	Story by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Portfolio - Worasak</title>
-		<link rel="icon" type="image/png" href="images/favicon.ico">
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-		<link href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/css/lightbox.min.css" rel="stylesheet" />
-	   <!-- <link rel="stylesheet" href="public/css/my.css"> -->
-		<style>
-			.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  gap: 1.5rem;
-  margin-top: 1rem;
-}
-
-.project-tags {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 15px;
-}
-
-.project-tag {
-    background-color: #0091df;
-    color: rgb(255, 255, 255);
-    padding: 5px 10px;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    margin-right: 10px;
-    margin-bottom: 10px;
-}
-
-.skill-item {
-  text-align: center;
-}
-
-.skill-item img {
-  width: 48px;
-  height: 48px;
-  object-fit: contain;
-  margin-bottom: 0.5rem;
-  transition: transform 0.3s ease;
-}
-
-.skill-item img:hover {
-  transform: scale(1.1);
-}
-
-.skill-item span {
-  display: block;
-  font-weight: 600;
-  font-size: 0.9rem;
-  margin-top: 0.3rem;
-}
-
-.gallery-grid {
-  display: grid;
-  /* grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); */
-  gap: 2rem;
-  /* margin-top: 1rem; */
-}
-
-.project-item h3 {
-  margin-bottom: 1rem;
-}
-
-.project-images a {
-  display: inline-block;
-  margin-right: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.project-images img {
-  width: 200px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 6px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.3);
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-
-.project-images img:hover {
-  transform: scale(1.1);
-}
-
-/* Modal Styles */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    padding-top: 50px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.9);
-    animation: fadeIn 0.3s;
-}
-
-.modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    max-height: 90%;
-    animation: zoomIn 0.3s;
-    object-fit: contain;
-}
-
-/* Modal */
-.modal-v {
-    display: none; /* ซ่อน modal เริ่มต้น */
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8); /* พื้นหลังมืด */
-    justify-content: center;
-    align-items: center;
-}
-
-.modal-content-v {
-    position: relative;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 90%;
-    max-height: 70%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.modal-video {
-    max-width: 800%;
-    max-height: 60vh;
-    border-radius: 5px;
-}
-
-.close-v {
-    position: absolute;
-    top: -50px;
-    right: -160px;
-    color: #fff;
-    font-size: 40px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-
-.close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #fff;
-    font-size: 40px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.close:hover {
-    color: #bbb;
-}
-
-.ai-badge {
-    display: inline-block;
-    background-color: #6d28d9;
-    color: #fff;
-    padding: 2px 10px;
-    border-radius: 20px;
-    font-size: 0.7rem;
-    font-weight: 600;
-    vertical-align: middle;
-    letter-spacing: 0.02em;
-}
-
-.project-section-note {
-    font-size: 0.9rem;
-    opacity: 0.8;
-}
-
-		</style>
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-
-		<!-- Wrapper -->
-			<div id="wrapper" class="divided">
-
-				<!-- One -->
-					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
-						<div class="content">
-							<h1>Full Stack Developer</h1>
-							<h2>Worasak Sriworawiboon</h2>
-							<!-- <p class="major"> Able to design and analyze systems according to user requirements and effectively solve problems that arise.</p> -->
-							<ul class="actions stacked">
-								<li><a href="#first" class="button big wide smooth-scroll-middle">Get Started</a></li>
-							</ul>
-							
-						</div>
-						<div class="image">
-							<img src="images/picture.png" alt="" />
-						</div>
-					</section>
-
-				<!-- Two -->
-				<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
-					<div class="content">
-						<h2>About</h2>
-						<p class="major">
-							Experienced in designing and analyzing systems based on user requirements, with strong problem-solving and communication skills.
-						</p>
-						<p>
-							With over <strong>9 years of experience</strong> in software development, I currently work as a <strong>Full Stack Developer</strong> responsible for managing core projects from start to finish. I coordinate smoothly with IT teams and clients on API integration and design, handle task commits, and oversee production server deployments and network-related troubleshooting. I am also capable of managing projects in parallel with efficiency and precision.
-						</p>
-						<!-- <ul class="actions stacked">
-							<li><a href="#" class="button">Learn More</a></li>
-						</ul> -->
-					</div>
-					<!-- <div class="image">
-						<img src="images/spotlight01.jpg" alt="" />
-					</div> -->
-				</section>
-
-				<!-- Three -->
-					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
-						<div class="content">
-							<h2>Skills</h2>
-							<p>
-								I have hands-on experience in developing both web and mobile applications using modern frontend and backend technologies. My skill set includes working with <strong>RESTful APIs</strong> and <strong>SOAP services</strong> for seamless system integration. I'm proficient in full-stack development with <strong>Laravel, Node.js, Flutter, Kotlin,</strong> and <strong>Swift</strong>. I work with <strong>Oracle, MySQL,</strong> and <strong>PostgreSQL</strong> databases, and deploy applications using <strong>IIS</strong>, <strong>XAMPP</strong>, and basic <strong>AWS</strong> management (primarily Windows Server) as well as <strong>Google Cloud</strong>. My development workflow includes tools like <strong>Postman</strong>, <strong>Swagger</strong>, and <strong>Git</strong>. I'm also experienced with <strong>JWT</strong>, <strong>Basic Authentication</strong>, <strong>Socket.IO</strong>, <strong>Push Notifications</strong>, <strong>Firebase</strong>, and <strong>Google Maps API</strong>.
-							</p>
-							
-							  
-							<!-- <ul class="actions stacked">
-								<li><a href="#" class="button">Learn More</a></li>
-							</ul> -->
-
-							<div class="skills-grid">
-								<div class="skill-item">
-									<img src="images/icons/kotlin.png" alt="Kotlin">
-									<span>Kotlin</span> <!-- Main dev language -->
-								</div>
-								<div class="skill-item">
-									<img src="images/icons/laravel.png" alt="Laravel">
-									<span>Laravel</span>
-								</div>
-								<div class="skill-item">
-									<img src="images/icons/html5.png" alt="HTML5">
-									<span>HTML5</span>
-								</div>
-								<div class="skill-item">
-									<img src="images/icons/css.png" alt="CSS3">
-									<span>CSS3</span>
-								</div>
-								<div class="skill-item">
-									<img src="images/icons/js.png" alt="JavaScript">
-									<span>JavaScript</span>
-								</div>
-								<div class="skill-item">
-									<img src="images/icons/php.png" alt="PHP">
-									<span>PHP</span>
-								</div>
-								<div class="skill-item">
-									<img src="images/icons/nodejs.png" alt="Flutter">
-									<span>Node.js</span>
-								</div>
-								<div class="skill-item">
-									<img src="images/icons/flutter.png" alt="Flutter">
-									<span>Flutter</span>
-								</div>
-								<div class="skill-item">
-									<img src="images/icons/react.png" alt="React">
-									<span>React (Basic)</span> <!-- Specify "Basic" -->
-								</div>
-								<div class="skill-item">
-									<img src="images/icons/c_sharp.png" alt="C#">
-									<span>C#</span> <!-- Specify "Basic" -->
-								</div>
-								<div class="skill-item">
-									<img src="images/icons/python.png" alt="React">
-									<span>Python (Basic)</span> <!-- Specify "Basic" -->
-								</div>
-							</div>
-						</div>
-						
-						
-					</section>
-
-				<!-- Four -->
-			
-
-				<!-- Five -->
-					<section class="wrapper style1 align-center">
-						<!-- <div class="inner">
-							<h2>Projects</h2>
-						
-						</div> -->
-
-						<!-- Gallery -->
-
-
-						<section id="gallery" class="spotlight style1 content-align-left onscroll-image-fade-in">
-							<div class="content">
-								<h2>Projects</h2>
-								<!-- <p>Some of my key projects with multiple screenshots. Click on any image to enlarge.</p> -->
-								
-								<div class="gallery-grid">
-
-									<p class="project-section-note">
-										Projects marked <span class="ai-badge">Vibe Coding · AI Assistant</span>
-										were built with an AI coding assistant (Claude Code): I defined the requirements,
-										data model and flows, reviewed and tested every module, and the assistant
-										helped write the code.
-									</p>
-
-									<!-- Pixel Management (software-system-company) -->
-									<div class="project-item">
-										<div class="project-content">
-											<h3 class="project-title">
-												Pixel Management – Company Management System
-												<span class="ai-badge">Vibe Coding · AI Assistant</span>
-											</h3>
-
-											<div class="project-tags">
-												<span class="project-tag">React 19</span>
-												<span class="project-tag">TypeScript</span>
-												<span class="project-tag">Vite</span>
-												<span class="project-tag">Node.js / Express</span>
-												<span class="project-tag">PostgreSQL</span>
-												<span class="project-tag">JWT</span>
-												<span class="project-tag">Flutter</span>
-												<span class="project-tag">Firebase Notification</span>
-											</div>
-
-											<div class="project-description">
-												<p>
-													An internal platform for running a software company day to day: projects,
-													tasks, people, time off and overtime in one place, with a web app for the
-													office and a Flutter mobile app for the team on the go.
-												</p>
-
-												<h4>Key Features</h4>
-												<ul>
-													<li>Dashboard and analytics with KPIs, charts and team activity</li>
-													<li>Project management and Kanban board with task cards, @mention comments and image attachments</li>
-													<li>Daily work reports, notes, file management and a support / incident log</li>
-													<li>
-														HR workflows:
-														<ul>
-															<li>Leave requests with entitlements and approval</li>
-															<li>Duty roster with shift swap requests</li>
-															<li>Overtime records, approvals and payroll summary</li>
-															<li>Expense claims</li>
-														</ul>
-													</li>
-													<li>Team directory, internal messaging, notifications and a shared calendar</li>
-													<li>Role-based access (admin / HR / manager / staff) with JWT authentication, sign-in by employee ID or email</li>
-													<li>Thai / English UI and per-user appearance settings (accent colour, sidebar)</li>
-													<li>Flutter mobile app with push notifications (Firebase)</li>
-												</ul>
-											</div>
-										</div>
-
-										<div class="project-images">
-											<a href="public/img/projects/company2.jpg" data-lightbox="company" data-title="Pixel Management - Dashboard"><img src="public/img/projects/company2.jpg" alt="Pixel Management Dashboard" /></a>
-											<a href="public/img/projects/company3.jpg" data-lightbox="company" data-title="Pixel Management - Analytics"><img src="public/img/projects/company3.jpg" alt="Pixel Management Analytics" /></a>
-											<a href="public/img/projects/company4.jpg" data-lightbox="company" data-title="Pixel Management - Projects"><img src="public/img/projects/company4.jpg" alt="Pixel Management Projects" /></a>
-											<a href="public/img/projects/company5.jpg" data-lightbox="company" data-title="Pixel Management - Kanban Board"><img src="public/img/projects/company5.jpg" alt="Pixel Management Kanban" /></a>
-											<a href="public/img/projects/company7.jpg" data-lightbox="company" data-title="Pixel Management - Duty Roster"><img src="public/img/projects/company7.jpg" alt="Pixel Management Duty Roster" /></a>
-											<a href="public/img/projects/company8.jpg" data-lightbox="company" data-title="Pixel Management - Overtime"><img src="public/img/projects/company8.jpg" alt="Pixel Management Overtime" /></a>
-											<a href="public/img/projects/company9.jpg" data-lightbox="company" data-title="Pixel Management - Calendar"><img src="public/img/projects/company9.jpg" alt="Pixel Management Calendar" /></a>
-											<a href="public/img/projects/company10.jpg" data-lightbox="company" data-title="Pixel Management - Team"><img src="public/img/projects/company10.jpg" alt="Pixel Management Team" /></a>
-											<a href="public/img/projects/company11.jpg" data-lightbox="company" data-title="Pixel Management - Messages"><img src="public/img/projects/company11.jpg" alt="Pixel Management Messages" /></a>
-											<a href="public/img/projects/company6.jpg" data-lightbox="company" data-title="Pixel Management - Leave"><img src="public/img/projects/company6.jpg" alt="Pixel Management Leave" /></a>
-											<a href="public/img/projects/company1.jpg" data-lightbox="company" data-title="Pixel Management - Sign in"><img src="public/img/projects/company1.jpg" alt="Pixel Management Sign in" /></a>
-										</div>
-									</div>
-
-									<hr>
-
-									<!-- CareNest -->
-									<div class="project-item">
-										<div class="project-content">
-											<h3 class="project-title">
-												CareNest – Care Home Management (SaaS)
-												<span class="ai-badge">Vibe Coding · AI Assistant</span>
-											</h3>
-
-											<div class="project-tags">
-												<span class="project-tag">React 19</span>
-												<span class="project-tag">TypeScript</span>
-												<span class="project-tag">Tailwind CSS</span>
-												<span class="project-tag">Node.js / Express</span>
-												<span class="project-tag">Prisma</span>
-												<span class="project-tag">PostgreSQL</span>
-												<span class="project-tag">Flutter</span>
-											</div>
-
-											<div class="project-description">
-												<p>
-													A management system for nursing and elderly care facilities. It covers the
-													whole stay of a resident – admission, room and bed, daily care, medication,
-													meals, appointments and billing – and is sold as a subscription SaaS.
-												</p>
-
-												<h4>Key Features</h4>
-												<ul>
-													<li>Resident records: medical history, conditions &amp; allergies, contacts, assessments and photos</li>
-													<li>Rooms &amp; beds: building/floor structure, bed assignment, transfers and history</li>
-													<li>Daily care: vital signs, ADL, hygiene, diaper changes and nursing notes</li>
-													<li>Medication (lightweight eMAR): catalogue, schedules, administration and history</li>
-													<li>Nutrition: eating profiles, food allergies, diet plans, menus and intake tracking</li>
-													<li>Doctor / hospital appointments and physical therapy programmes with progress tracking</li>
-													<li>Billing: charges → invoices → payments, printable invoices / receipts, income &amp; expenses</li>
-													<li>Staff accounts by role (doctor, nurse, caregiver, therapist) with a permission matrix</li>
-													<li>Family portal for relatives, reports dashboard, pricing page with subscription plans</li>
-													<li>Thai / English UI, plus a Flutter mobile app</li>
-												</ul>
-											</div>
-										</div>
-
-										<div class="project-images">
-											<a href="public/img/projects/carenest2.jpg" data-lightbox="carenest" data-title="CareNest - Dashboard"><img src="public/img/projects/carenest2.jpg" alt="CareNest Dashboard" /></a>
-											<a href="public/img/projects/carenest3.jpg" data-lightbox="carenest" data-title="CareNest - Residents"><img src="public/img/projects/carenest3.jpg" alt="CareNest Residents" /></a>
-											<a href="public/img/projects/carenest4.jpg" data-lightbox="carenest" data-title="CareNest - Rooms &amp; Beds"><img src="public/img/projects/carenest4.jpg" alt="CareNest Rooms" /></a>
-											<a href="public/img/projects/carenest5.jpg" data-lightbox="carenest" data-title="CareNest - Pricing / Subscription Plans"><img src="public/img/projects/carenest5.jpg" alt="CareNest Pricing" /></a>
-											<a href="public/img/projects/carenest1.jpg" data-lightbox="carenest" data-title="CareNest - Sign in"><img src="public/img/projects/carenest1.jpg" alt="CareNest Sign in" /></a>
-										</div>
-									</div>
-
-									<hr>
-
-									<!-- DailyJober -->
-									<div class="project-item">
-										<div class="project-content">
-											<h3 class="project-title">
-												DailyJober – Nearby Daily Job Finder
-												<span class="ai-badge">Vibe Coding · AI Assistant</span>
-											</h3>
-
-											<div class="project-tags">
-												<span class="project-tag">React 19</span>
-												<span class="project-tag">Vite</span>
-												<span class="project-tag">Node.js / Express</span>
-												<span class="project-tag">PostgreSQL</span>
-												<span class="project-tag">JWT</span>
-											</div>
-
-											<div class="project-description">
-												<p>
-													A job board for daily and short-term work. Job seekers find work near them
-													on a map, and employers post jobs and manage applicants from their own portal.
-												</p>
-
-												<h4>Key Features</h4>
-												<ul>
-													<li>Map search with a radius view: real distances calculated in SQL (haversine) from each job's location</li>
-													<li>Filters by category, keyword and conditions (e.g. same-day pay, meals provided)</li>
-													<li>Save jobs and apply in one tap</li>
-													<li>
-														Employer portal (JWT sign-in):
-														<ul>
-															<li>Post and edit jobs, pick the location on a map</li>
-															<li>Review, accept or reject applicants</li>
-															<li>A job is marked filled automatically once the headcount is reached</li>
-														</ul>
-													</li>
-													<li>Blog with a content editor and Google AdSense settings</li>
-													<li>Mobile-first responsive design</li>
-												</ul>
-											</div>
-										</div>
-
-										<div class="project-images">
-											<a href="public/img/projects/dailyjob1.jpg" data-lightbox="dailyjob" data-title="DailyJober - Home"><img src="public/img/projects/dailyjob1.jpg" alt="DailyJober Home" /></a>
-											<a href="public/img/projects/dailyjob2.jpg" data-lightbox="dailyjob" data-title="DailyJober - Map search"><img src="public/img/projects/dailyjob2.jpg" alt="DailyJober Map search" /></a>
-											<a href="public/img/projects/dailyjob4.jpg" data-lightbox="dailyjob" data-title="DailyJober - Employer portal"><img src="public/img/projects/dailyjob4.jpg" alt="DailyJober Employer portal" /></a>
-											<a href="public/img/projects/dailyjob3.jpg" data-lightbox="dailyjob" data-title="DailyJober - Blog"><img src="public/img/projects/dailyjob3.jpg" alt="DailyJober Blog" /></a>
-											<a href="public/img/projects/dailyjobm1.jpg" data-lightbox="dailyjob" data-title="DailyJober - Mobile home"><img src="public/img/projects/dailyjobm1.jpg" alt="DailyJober Mobile home" /></a>
-											<a href="public/img/projects/dailyjobm2.jpg" data-lightbox="dailyjob" data-title="DailyJober - Mobile job list"><img src="public/img/projects/dailyjobm2.jpg" alt="DailyJober Mobile job list" /></a>
-										</div>
-									</div>
-
-									<hr>
-
-									<!-- DuckNovel (Venol) -->
-									<div class="project-item">
-										<div class="project-content">
-											<h3 class="project-title">
-												DuckNovel – Online Novel &amp; Webtoon Platform
-												<span class="ai-badge">Vibe Coding · AI Assistant</span>
-											</h3>
-
-											<div class="project-tags">
-												<span class="project-tag">Laravel 13</span>
-												<span class="project-tag">PHP 8.5</span>
-												<span class="project-tag">MySQL</span>
-												<span class="project-tag">Tailwind CSS</span>
-												<span class="project-tag">Opn Payments</span>
-												<span class="project-tag">Google Login</span>
-											</div>
-
-											<div class="project-description">
-												<p>
-													A Thai platform for reading novels and webtoons. Readers buy chapters with
-													coins, and writers publish their work, follow their stats and get paid.
-												</p>
-
-												<h4>Key Features</h4>
-												<ul>
-													<li>Browse, rankings, genres and tags, search with autocomplete, reading missions and a personal library</li>
-													<li>Coin wallet backed by a ledger: buy chapters, top up by card or PromptPay QR (Opn Payments), receipts and refunds</li>
-													<li>
-														Writer studio:
-														<ul>
-															<li>Rich-text chapter editor, scheduled publishing, cartoon uploads</li>
-															<li>Views and sales charts</li>
-															<li>Earnings wallet and payout requests</li>
-														</ul>
-													</li>
-													<li>Social sign-in (Google / LINE), email verification and password reset</li>
-													<li>Admin tools: users, reports and content moderation, payouts, security log</li>
-													<li>18+ age gate, PDPA data export / account deletion, legal pages</li>
-													<li>SEO: sitemaps, structured data and generated Open Graph images</li>
-													<li>Covered by 270+ automated feature tests</li>
-												</ul>
-											</div>
-
-											<div class="project-links mt-3 mb-2">
-												<a href="https://ducknovel.com" target="_blank" rel="noopener noreferrer" class="button primary small">Visit ducknovel.com</a>
-											</div>
-										</div>
-
-										<div class="project-images">
-											<a href="public/img/projects/venol1.jpg" data-lightbox="venol" data-title="DuckNovel - Home"><img src="public/img/projects/venol1.jpg" alt="DuckNovel Home" /></a>
-											<a href="public/img/projects/venol3.jpg" data-lightbox="venol" data-title="DuckNovel - Book page"><img src="public/img/projects/venol3.jpg" alt="DuckNovel Book page" /></a>
-											<a href="public/img/projects/venol4.jpg" data-lightbox="venol" data-title="DuckNovel - Reader"><img src="public/img/projects/venol4.jpg" alt="DuckNovel Reader" /></a>
-											<a href="public/img/projects/venol5.jpg" data-lightbox="venol" data-title="DuckNovel - Writer dashboard"><img src="public/img/projects/venol5.jpg" alt="DuckNovel Writer dashboard" /></a>
-											<a href="public/img/projects/venol6.jpg" data-lightbox="venol" data-title="DuckNovel - Coin top-up"><img src="public/img/projects/venol6.jpg" alt="DuckNovel Coin top-up" /></a>
-											<a href="public/img/projects/venol2.jpg" data-lightbox="venol" data-title="DuckNovel - Explore"><img src="public/img/projects/venol2.jpg" alt="DuckNovel Explore" /></a>
-										</div>
-									</div>
-
-									<hr>
-
-									<!-- ThaiProfit -->
-									<div class="project-item">
-										<div class="project-content">
-											<h3 class="project-title">
-												ThaiProfit – Profit Calculator for Online Sellers
-												<span class="ai-badge">Vibe Coding · AI Assistant</span>
-											</h3>
-
-											<div class="project-tags">
-												<span class="project-tag">Laravel 12</span>
-												<span class="project-tag">MySQL</span>
-												<span class="project-tag">Tailwind CSS</span>
-												<span class="project-tag">Alpine.js</span>
-												<span class="project-tag">Google Login</span>
-											</div>
-
-											<div class="project-description">
-												<p>
-													A tool that shows Thai sellers on Shopee, Lazada and TikTok Shop how much
-													they really keep after platform fees, shipping, ads and costs – per order
-													and for the whole month.
-												</p>
-
-												<h4>Key Features</h4>
-												<ul>
-													<li>Real-time profit calculator; the same formulas run in PHP and JavaScript and are checked against shared test fixtures</li>
-													<li>Platform fee rules stored with versions and effective dates, so old calculations never change</li>
-													<li>Monthly profit and profit-goal planner; ROAS, COD return, campaign and platform comparison tools</li>
-													<li>
-														Seller account (Google sign-in):
-														<ul>
-															<li>Saved calculations and product catalogue (CSV import / export)</li>
-															<li>Import platform settlement files (XLSX / CSV) and ad spend reports</li>
-															<li>Monthly expenses and a profit &amp; loss report with charts, Excel / PDF export</li>
-														</ul>
-													</li>
-													<li>Admin panel for fee rules, users, blog and SEO landing pages, with a security log</li>
-												</ul>
-											</div>
-										</div>
-
-										<div class="project-images">
-											<a href="public/img/projects/thaiprofit1.jpg" data-lightbox="thaiprofit" data-title="ThaiProfit - Calculator"><img src="public/img/projects/thaiprofit1.jpg" alt="ThaiProfit Calculator" /></a>
-											<a href="public/img/projects/thaiprofit2.jpg" data-lightbox="thaiprofit" data-title="ThaiProfit - Monthly profit"><img src="public/img/projects/thaiprofit2.jpg" alt="ThaiProfit Monthly profit" /></a>
-											<a href="public/img/projects/thaiprofit3.jpg" data-lightbox="thaiprofit" data-title="ThaiProfit - Profit &amp; Loss"><img src="public/img/projects/thaiprofit3.jpg" alt="ThaiProfit Profit and Loss" /></a>
-											<a href="public/img/projects/thaiprofit4.jpg" data-lightbox="thaiprofit" data-title="ThaiProfit - Settlement report"><img src="public/img/projects/thaiprofit4.jpg" alt="ThaiProfit Settlement report" /></a>
-											<a href="public/img/projects/thaiprofit5.jpg" data-lightbox="thaiprofit" data-title="ThaiProfit - Products"><img src="public/img/projects/thaiprofit5.jpg" alt="ThaiProfit Products" /></a>
-											<a href="public/img/projects/thaiprofit6.jpg" data-lightbox="thaiprofit" data-title="ThaiProfit - Admin"><img src="public/img/projects/thaiprofit6.jpg" alt="ThaiProfit Admin" /></a>
-										</div>
-									</div>
-
-									<hr>
-
-									<!-- Coffee -->
-									<div class="project-item">
-										<div class="project-content">
-											<h3 class="project-title">
-												Coffee
-												<span class="freelance-badge">[Self Learning]</span>
-											</h3>
-											
-											<div class="project-tags">
-												<span class="project-tag">ReactJs</span>
-												<span class="project-tag">Flask Python</span>
-											</div>
-											
-											<div class="project-description">
-
-												<p>
-													Coffee Queue is a mobile and web-based ordering management system
-													designed for coffee shops and cafés. The platform streamlines the
-													ordering process by allowing customers to place orders directly from
-													their devices while providing real-time order management for staff
-													and administrators.
-												</p>
-											
-												<p>
-													<strong>Real-Time Order Management:</strong>
-													When a customer submits an order, the system instantly sends
-													real-time notifications with sound alerts to the admin dashboard
-													and order display screens, ensuring staff can respond quickly and
-													efficiently during peak business hours.
-												</p>
-											
-												<h4>Key Features</h4>
-											
-												<ul>
-													<li>
-														Customer ordering system with a simple and mobile-friendly interface
-													</li>
-											
-													<li>
-														Product catalog organized by categories for easy browsing
-													</li>
-											
-													<li>
-														Shopping cart functionality allowing customers to review and
-														submit orders seamlessly
-													</li>
-											
-													<li>
-														Real-time order notifications with sound alerts for staff
-														and administrators
-													</li>
-											
-													<li>
-														Queue management dashboard for administrators
-														<ul>
-															<li>Waiting</li>
-															<li>Preparing</li>
-															<li>Completed</li>
-														</ul>
-													</li>
-											
-													<li>
-														Order display screen showing:
-														<ul>
-															<li>Current waiting orders</li>
-															<li>Completed orders ready for pickup</li>
-															<li>Order details and queue status</li>
-														</ul>
-													</li>
-											
-													<li>
-														Real-time synchronization between customer, admin, and display screens
-													</li>
-											
-													<li>
-														Responsive design optimized for mobile, tablet, and desktop devices
-													</li>
-												</ul>
-											
-											</div>
-											
-											<div class="project-links mt-3 mb-2">
-		
-												<!-- Demo Video -->
-												<a 
-													href="javascript:void(0)"
-													class="button small"
-													onclick="openModalVideo('public/video/smile_coffee_react_flask.mp4')"
-												>
-													Watch Demo Video
-												</a>
-											
-											</div>
-										</div>
-										
-										<div class="project-images" id="coffee-images">
-										</div>
-									</div>
-
-									<hr>
-
-									<!-- Pettag Thailand [Inprocess] -->
-									<div class="project-item">
-										<div class="project-content">
-											<h3 class="project-title">
-												Pettag Thailand 
-												<span class="freelance-badge">[Freelance]</span>
-											</h3>
-											
-											<div class="project-tags">
-												<span class="project-tag">Flutter</span>
-												<span class="project-tag">Laravel API</span>
-												<span class="project-tag">Firebase Notification</span>
-												<span class="project-tag">Google Maps</span>
-											</div>
-											
-											<div class="project-description">
-											
-												<p>
-													Pettag Thailand is a mobile application designed to help pet owners 
-													register and manage their pets' information through QR code pet tags 
-													attached to collars or accessories.
-												</p>
-											
-												<p>
-													<strong>Lost & Found System:</strong>  
-													If a pet is reported missing and someone scans the QR code tag, 
-													the system can instantly notify the pet owner in real time, 
-													helping increase the chance of safely recovering the pet.
-												</p>
-											
-												<h4>Key Features</h4>
-											
-												<ul>
-													<li>Register and manage pet profiles</li>
-											
-													<li>
-														Attach QR code tags to pet collars or accessories
-													</li>
-											
-													<li>
-														Real-time notifications when a missing pet is found
-													</li>
-											
-													<li>
-														View nearby pet-related services:
-														<ul>
-															<li>Veterinary clinics</li>
-															<li>Pet stores</li>
-															<li>Pet grooming services</li>
-															<li>Pet activities and events</li>
-														</ul>
-													</li>
-											
-													<li>
-														Mobile-friendly user experience built with Flutter
-													</li>
-												</ul>
-											
-											</div>
-											
-											<div class="project-links mt-3 mb-2">
-											
-												<!-- Google Play Button -->
-												<a 
-													href="https://play.google.com/store/apps/details?id=com.fil57tech.pettagthailand"
-													target="_blank"
-													class="button primary small"
-												>
-													View on Google Play Store
-												</a>
-											
-												<!-- Demo Video -->
-												<a 
-													href="javascript:void(0)"
-													class="button small"
-													onclick="openModalVideo('public/video/pettag.mp4')"
-												>
-													Watch Demo Video
-												</a>
-											
-											</div>
-										</div>
-										
-										<div class="project-images content-pettag" id="pettag-images">
-											<!-- <a href="public/img/projects/pettag3.jpg" data-lightbox="pettag" data-title="Pettag Thailand - Image 1">
-												<img src="public/img/projects/pettag3.jpg" alt="Pettag Thailand Image 1" />
-											</a>
-											<a href="public/img/projects/pettag4.jpg" data-lightbox="pettag" data-title="Pettag Thailand - Image 2">
-												<img src="public/img/projects/pettag4.jpg" alt="Pettag Thailand Image 2" />
-											</a>
-											<a href="public/img/projects/pettag6.jpg" data-lightbox="pettag" data-title="Pettag Thailand - Image 3">
-												<img src="public/img/projects/pettag6.jpg" alt="Pettag Thailand Image 3" />
-											</a>
-											<a href="public/img/projects/pettag7.jpg" data-lightbox="pettag" data-title="Pettag Thailand - Image 4">
-												<img src="public/img/projects/pettag7.jpg" alt="Pettag Thailand Image 4" />
-											</a>
-											<a href="public/img/projects/pettag20.jpg" data-lightbox="pettag" data-title="Pettag Thailand - Image 5">
-												<img src="public/img/projects/pettag20.jpg" alt="Pettag Thailand Image 5" />
-											</a>
-											<a href="public/img/projects/pettag21.jpg" data-lightbox="pettag" data-title="Pettag Thailand - Image 6">
-												<img src="public/img/projects/pettag21.jpg" alt="Pettag Thailand Image 6" />
-											</a> -->
-										</div>
-									</div>
-
-									<hr>
-
-									<!-- MedImage -->
-									<div class="project-item">
-										<div class="project-content">
-											<h3 class="project-title">MedImage | Full-Stack Developer</h3>
-											<div class="project-tags">
-												<span class="project-tag">HTML</span>
-												<span class="project-tag">CSS</span>
-												<span class="project-tag">JavaScript</span>
-												<span class="project-tag">Swift</span>
-												<span class="project-tag">Kotlin</span>
-												<span class="project-tag">PHP</span>
-												<span class="project-tag">Soap</span>
-											</div>
-											<p class="project-description">
-												A system for doctors and medical students to record medical procedures, featuring image capture and various tools such as Pencil, Color, Template, Camera Guide, Crop, Clipboard, and real-time integration with hospital HIS systems.
-											</p>
-											<div class="project-links mt-2">
-												<a href="javascript:void(0)" class="button small" onclick="openModalVideo('public/video/medimage_opd.mp4')">Play Video</a>
-											</div>
-											
-											<div class="mt-2">
-												<a href="https://play.google.com/store/apps/details?id=com.pixel.medimagemobilechula&hl=th" target="_blank">View App (Google Play Store)</a> | <a href="https://apps.apple.com/th/app/kcmh-medimage/id1539916106" target="_blank">View App (App Store)</a> 
-												
-											</div>
-										</div>
-
-										
-										<br>
-										<div class="project-images">
-											<a href="public/img/projects/med1.png" data-lightbox="medimage" data-title="MedImage - Image 1">
-												<img src="public/img/projects/med1.png" alt="MedImage Image 1" />
-											</a>
-											<a href="public/img/projects/med2.png" data-lightbox="medimage" data-title="MedImage - Image 2">
-												<img src="public/img/projects/med2.png" alt="MedImage Image 2" />
-											</a>
-											<a href="public/img/projects/med3.png" data-lightbox="medimage" data-title="MedImage - Image 3">
-												<img src="public/img/projects/med3.png" alt="MedImage Image 3" />
-											</a>
-											<a href="public/img/projects/med4.png" data-lightbox="medimage" data-title="MedImage - Image 4">
-												<img src="public/img/projects/med4.png" alt="MedImage Image 4" />
-											</a>
-										</div>
-									</div>
-									
-									<hr>
-
-								
-									<!-- Tele Conference (Demo) -->
-									<div class="project-item">
-										<div class="project-content">
-											<h3 class="project-title">Tele Conference (Demo)</h3>
-											<div class="project-tags">
-												<span class="project-tag">Kotlin</span>
-												<span class="project-tag">Node.js</span>
-											</div>
-											<p class="project-description">
-												A connect to the video conference API service to enable doctors and patients to communicate via video conference.
-											</p>
-											<div class="ms-2">
-												<h5>Reference</h5>
-												<ul>
-													<li><a href="https://www.cometchat.com/docs/ui-kit/android/v5/overview" target="_blank" rel="noopener noreferrer">https://www.cometchat.com/docs/ui-kit/android/v5/overview</a></li>
-												</ul>
-											</div>
-											<div class="project-links mt-2">
-												<!-- <a href="#" class="button small">Live Demo</a> -->
-												<!-- <a href="https://github.com/wsk-24/MergeX_Watermark.git" target="_blank" class="button small">GitHub</a> -->
-											</div>
-										</div>
-										
-										<div class="project-images">
-											<a href="public/img/projects/tele1.jpg" data-lightbox="teleconf" data-title="Tele Conference - Image 1">
-												<img src="public/img/projects/tele1.jpg" alt="Tele Conference Image 1" />
-											</a>
-											<a href="public/img/projects/tele2.jpg" data-lightbox="teleconf" data-title="Tele Conference - Image 2">
-												<img src="public/img/projects/tele2.jpg" alt="Tele Conference Image 2" />
-											</a>
-											<a href="public/img/projects/tele3.jpg" data-lightbox="teleconf" data-title="Tele Conference - Image 3">
-												<img src="public/img/projects/tele3.jpg" alt="Tele Conference Image 3" />
-											</a>
-											<a href="public/img/projects/tele4.jpg" data-lightbox="teleconf" data-title="Tele Conference - Image 4">
-												<img src="public/img/projects/tele4.jpg" alt="Tele Conference Image 4" />
-											</a>
-											<a href="public/img/projects/tele5.jpg" data-lightbox="teleconf" data-title="Tele Conference - Image 5">
-												<img src="public/img/projects/tele5.jpg" alt="Tele Conference Image 5" />
-											</a>
-											<a href="public/img/projects/tele6.jpg" data-lightbox="teleconf" data-title="Tele Conference - Image 6">
-												<img src="public/img/projects/tele6.jpg" alt="Tele Conference Image 6" />
-											</a>
-										</div>
-									</div>
-
-									<hr>
-									
-									<!-- EyeQ System -->
-									<div class="project-item">
-										<div class="project-content">
-											<h3 class="project-title">EyeQ System | Full-Stack Developer</h3>
-											<div class="project-tags">
-												<span class="project-tag">HTML</span>
-												<span class="project-tag">CSS</span>
-												<span class="project-tag">JavaScript</span>
-												<span class="project-tag">PHP</span>
-												<span class="project-tag">Node.js</span>
-												<span class="project-tag">Socket.IO</span>
-												<span class="project-tag">Kotlin</span>
-											</div>
-											<p class="project-description">
-												Developed a user-facing application using Native Kotlin, featuring real-time queue calling, displaying patient information for the current queue, and a screen for showing patients who have been skipped.
-											</p>
-											<div class="project-links mt-2">
-												<a href="javascript:void(0)" class="button small" onclick="openModalVideo('public/video/eye1.mp4')">Play Video</a>
-											</div>
-										</div>
-										
-										<div class="project-images">
-											<a href="public/img/projects/eye10.jpg" data-lightbox="eyeq" data-title="EyeQ System - Image 1">
-												<img src="public/img/projects/eye10.jpg" alt="EyeQ System Image 1" />
-											</a>
-											<a href="public/img/projects/eye6.jpg" data-lightbox="eyeq" data-title="EyeQ System - Image 2">
-												<img src="public/img/projects/eye6.jpg" alt="EyeQ System Image 2" />
-											</a>
-											<a href="public/img/projects/eye7.jpg" data-lightbox="eyeq" data-title="EyeQ System - Image 3">
-												<img src="public/img/projects/eye7.jpg" alt="EyeQ System Image 3" />
-											</a>
-											<a href="public/img/projects/eye8.jpg" data-lightbox="eyeq" data-title="EyeQ System - Image 4">
-												<img src="public/img/projects/eye8.jpg" alt="EyeQ System Image 4" />
-											</a>
-											<a href="public/img/projects/eye9.jpg" data-lightbox="eyeq" data-title="EyeQ System - Image 5">
-												<img src="public/img/projects/eye9.jpg" alt="EyeQ System Image 5" />
-											</a>
-											<a href="public/img/projects/eye1.jpg" data-lightbox="eyeq" data-title="EyeQ System - Image 6">
-												<img src="public/img/projects/eye1.jpg" alt="EyeQ System Image 6" />
-											</a>
-											<a href="public/img/projects/eye2.jpg" data-lightbox="eyeq" data-title="EyeQ System - Image 7">
-												<img src="public/img/projects/eye2.jpg" alt="EyeQ System Image 7" />
-											</a>
-											<a href="public/img/projects/eye3.jpg" data-lightbox="eyeq" data-title="EyeQ System - Image 8">
-												<img src="public/img/projects/eye3.jpg" alt="EyeQ System Image 8" />
-											</a>
-											<a href="public/img/projects/eye4.jpg" data-lightbox="eyeq" data-title="EyeQ System - Image 9">
-												<img src="public/img/projects/eye4.jpg" alt="EyeQ System Image 9" />
-											</a>
-											<a href="public/img/projects/eye5.jpg" data-lightbox="eyeq" data-title="EyeQ System - Image 10">
-												<img src="public/img/projects/eye5.jpg" alt="EyeQ System Image 10" />
-											</a>
-										</div>
-									</div>
-
-									<hr>
-									
-									
-
-									<!-- EMR -->
-									<div class="project-item">
-										<div class="project-content">
-											<h3 class="project-title">EMR | Full-Stack Developer</h3>
-											<div class="project-tags">
-												<span class="project-tag">HTML</span>
-												<span class="project-tag">CSS</span>
-												<span class="project-tag">JavaScript</span>
-												<span class="project-tag">PHP</span>
-												<span class="project-tag">Laravel</span>
-											</div>
-											<p class="project-description">
-												A system for searching patient medical records and managing document types such as OPD (Outpatient Department) and IPD (Inpatient Department).
-											</p>
-											<div class="project-links mt-2">
-												<!-- <a href="#" class="button small">Live Demo</a> -->
-												<!-- <a href="#" class="button small">Source Code</a> -->
-											</div>
-										</div>
-										
-										<div class="project-images">
-											<a href="public/img/projects/emr1.jpg" data-lightbox="emr" data-title="EMR - Image 1">
-												<img src="public/img/projects/emr1.jpg" alt="EMR Image 1" />
-											</a>
-											<a href="public/img/projects/emr2.png" data-lightbox="emr" data-title="EMR - Image 2">
-												<img src="public/img/projects/emr2.png" alt="EMR Image 2" />
-											</a>
-											<a href="public/img/projects/emr3.png" data-lightbox="emr" data-title="EMR - Image 3">
-												<img src="public/img/projects/emr3.png" alt="EMR Image 3" />
-											</a>
-										</div>
-									</div>
-									
-									<hr>
-
-									<!-- Econsents -->
-									<div class="project-item">
-										<div class="project-content">
-											<h3 class="project-title">Econsents | Full-Stack Developer</h3>
-											<div class="project-tags">
-												<span class="project-tag">HTML</span>
-												<span class="project-tag">CSS</span>
-												<span class="project-tag">JavaScript</span>
-												<span class="project-tag">Laravel</span>
-												<span class="project-tag">Soap</span>
-												<span class="project-tag">Restful</span>
-												<span class="project-tag">Kotlin</span>
-												<span class="project-tag">Java</span>
-											</div>
-											<p class="project-description">
-												A system for creating medical consent documents and managing backend forms.
-											</p>
-											<div class="project-links mt-2">
-												<!-- <a href="#" class="button small">Live Demo</a> -->
-												<!-- <a href="#" class="button small">Source Code</a> -->
-											</div>
-										</div>
-										
-										<div class="project-images">
-											<a href="public/img/projects/econ1.png" data-lightbox="econsents" data-title="Econsents - Image 1">
-												<img src="public/img/projects/econ1.png" alt="Econsents Image 1" />
-											</a>
-											<a href="public/img/projects/econ2.jpg" data-lightbox="econsents" data-title="Econsents - Image 2">
-												<img src="public/img/projects/econ2.jpg" alt="Econsents Image 2" />
-											</a>
-											<a href="public/img/projects/econ3.jpg" data-lightbox="econsents" data-title="Econsents - Image 3">
-												<img src="public/img/projects/econ3.jpg" alt="Econsents Image 3" />
-											</a>
-											<a href="public/img/projects/econ4.jpg" data-lightbox="econsents" data-title="Econsents - Image 4">
-												<img src="public/img/projects/econ4.jpg" alt="Econsents Image 4" />
-											</a>
-											<a href="public/img/projects/econ5.jpg" data-lightbox="econsents" data-title="Econsents - Image 5">
-												<img src="public/img/projects/econ5.jpg" alt="Econsents Image 5" />
-											</a>
-											<a href="public/img/projects/econ7.png" data-lightbox="econsents" data-title="Econsents - Image 6">
-												<img src="public/img/projects/econ7.png" alt="Econsents Image 6" />
-											</a>
-										</div>
-									</div>
-
-									<hr>
-									
-									<!-- Integrating the Colmi Smart Ring API with Python (Demo) -->
-									<div class="project-item">
-										<div class="project-content">
-											<h3 class="project-title">Integrating the Colmi Smart Ring API with Python (Demo)</h3>
-											<div class="project-tags">
-												<span class="project-tag">Python</span>
-											</div>
-											<p class="project-description">
-												To retrieve data from the API for further processing.
-											</p>
-											<div class="ms-2">
-												<h5>Reference</h5>
-												<ul>
-													<li><a href="https://github.com/edgeimpulse/example-data-collection-colmi-r02" target="_blank" rel="noopener noreferrer">https://github.com/edgeimpulse/example-data-collection-colmi-r02</a></li>
-													<li><a href="https://tahnok.github.io/colmi_r02_client/colmi_r02_client.html" target="_blank" rel="noopener noreferrer">https://tahnok.github.io/colmi_r02_client/colmi_r02_client.html</a></li>
-												</ul>
-											</div>
-											<div class="project-links mt-2">
-												<!-- <a href="#" class="button small">Live Demo</a> -->
-												<!-- <a href="#" class="button small">Source Code</a> -->
-											</div>
-										</div>
-										
-										<div class="project-images">
-											<a href="public/img/projects/colmi1.jpg" data-lightbox="colmi" data-title="Colmi Smart Ring - Image 1">
-												<img src="public/img/projects/colmi1.jpg" alt="Colmi Smart Ring Image 1" />
-											</a>
-											<a href="public/img/projects/colmi2.jpg" data-lightbox="colmi" data-title="Colmi Smart Ring - Image 2">
-												<img src="public/img/projects/colmi2.jpg" alt="Colmi Smart Ring Image 2" />
-											</a>
-											<a href="public/img/projects/colmi3.jpg" data-lightbox="colmi" data-title="Colmi Smart Ring - Image 3">
-												<img src="public/img/projects/colmi3.jpg" alt="Colmi Smart Ring Image 3" />
-											</a>
-										</div>
-									</div>
-									
-									<hr>
-
-									<!-- Tracking Prototype App -->
-									<div class="project-item">
-										<div class="project-content">
-											<h3 class="project-title">Tracking Prototype App</h3>
-											<div class="project-tags">
-												<span class="project-tag">Kotlin</span>
-											</div>
-											<p class="project-description">
-												A system for tracking with patient transporter.
-											</p>
-											<div class="project-links mt-2">
-												<!-- <a href="#" class="button small">Live Demo</a> -->
-												<!-- <a href="#" class="button small">Source Code</a> -->
-											</div>
-										</div>
-										
-										<div class="project-images">
-											<a href="public/img/projects/tracking1.png" data-lightbox="tracking" data-title="Tracking Prototype App - Image 1">
-												<img src="public/img/projects/tracking1.png" alt="Tracking Prototype App Image 1" />
-											</a>
-											<a href="public/img/projects/tracking2.png" data-lightbox="tracking" data-title="Tracking Prototype App - Image 2">
-												<img src="public/img/projects/tracking2.png" alt="Tracking Prototype App Image 2" />
-											</a>
-											<a href="public/img/projects/tracking3.png" data-lightbox="tracking" data-title="Tracking Prototype App - Image 3">
-												<img src="public/img/projects/tracking3.png" alt="Tracking Prototype App Image 3" />
-											</a>
-										</div>
-									</div>
-
-									<hr>
-									
-									<!-- Merge & Watermark PDF -->
-									<div class="project-item">
-										<div class="project-content">
-											<h3 class="project-title">Merge & Watermark PDF</h3>
-											<div class="project-tags">
-												<span class="project-tag">Python</span>
-											</div>
-											<p class="project-description">
-												A full-stack web application with dynamic features.
-											</p>
-											<div class="project-links mt-2">
-												<!-- <a href="#" class="button small">Live Demo</a> -->
-												<!-- <a href="https://github.com/wsk-24/MergeX_Watermark.git" class="button small" target="_blank">GitHub</a> -->
-											</div>
-										</div>
-										
-										<div class="project-images">
-											<a href="public/img/projects/merge1.jpg" data-lightbox="merge" data-title="Merge & Watermark PDF - Image 1">
-												<img src="public/img/projects/merge1.jpg" alt="Merge & Watermark PDF Image 1" />
-											</a>
-											<a href="public/img/projects/merge2.jpg" data-lightbox="merge" data-title="Merge & Watermark PDF - Image 2">
-												<img src="public/img/projects/merge2.jpg" alt="Merge & Watermark PDF Image 2" />
-											</a>
-										</div>
-									</div>
-
-									<hr>
-									
-									<!-- PACC -->
-									<div class="project-item">
-										<div class="project-content">
-											<h3 class="project-title">PACC | Full-Stack Developer</h3>
-											<div class="project-tags">
-												<span class="project-tag">HTML</span>
-												<span class="project-tag">CSS</span>
-												<span class="project-tag">JavaScript</span>
-												<span class="project-tag">PHP</span>
-												<span class="project-tag">Kotlin</span>
-											</div>
-											<p class="project-description">
-												Complaint Notification System: Management of Anti-Corruption Civil Society Network System.
-											</p>
-											<div class="project-links mt-2">
-												<!-- <a href="#" class="button small">Live Demo</a> -->
-												<!-- <a href="https://github.com/wsk-24/MergeX_Watermark.git" class="button small" target="_blank">GitHub</a> -->
-											</div>
-										</div>
-										
-										<div class="project-images">
-											<a href="public/img/projects/pacc1.png" data-lightbox="pacc" data-title="PACC - Image 1">
-												<img src="public/img/projects/pacc1.png" alt="PACC Image 1" />
-											</a>
-											<a href="public/img/projects/pacc2.png" data-lightbox="pacc" data-title="PACC - Image 2">
-												<img src="public/img/projects/pacc2.png" alt="PACC Image 2" />
-											</a>
-										</div>
-									</div>
-									
-									<hr>
-
-									<!-- Assessment -->
-									<div class="project-item">
-										<div class="project-content">
-											<h3 class="project-title">Assessment | Full-Stack Developer</h3>
-											<div class="project-tags">
-												<span class="project-tag">HTML</span>
-												<span class="project-tag">CSS</span>
-												<span class="project-tag">JavaScript</span>
-												<span class="project-tag">Laravel</span>
-												<span class="project-tag">Restful</span>
-											</div>
-											<p class="project-description">
-												For personnel to assess themselves based on their job roles and status during the evaluation period, and to be able to check the status of their evaluation.
-											</p>
-											<div class="project-links mt-2">
-												<!-- <a href="#" class="button small">Live Demo</a> -->
-												<!-- <a href="https://github.com/wsk-24/MergeX_Watermark.git" class="button small" target="_blank">GitHub</a> -->
-											</div>
-										</div>
-										
-										<div class="project-images">
-											<a href="public/img/projects/assessment1.png" data-lightbox="assessment" data-title="Assessment - Image 1">
-												<img src="public/img/projects/assessment1.png" alt="Assessment Image 1" />
-											</a>
-											<a href="public/img/projects/assessment2.jpg" data-lightbox="assessment" data-title="Assessment - Image 2">
-												<img src="public/img/projects/assessment2.jpg" alt="Assessment Image 2" />
-											</a>
-											<a href="public/img/projects/assessment3.jpg" data-lightbox="assessment" data-title="Assessment - Image 3">
-												<img src="public/img/projects/assessment3.jpg" alt="Assessment Image 3" />
-											</a>
-										</div>
-									</div>
-									
-									<hr>
-
-									<!-- Register (Learning) -->
-									<div class="project-item">
-										<div class="project-content">
-											<h3 class="project-title">Register (Learning)</h3>
-											<div class="project-tags">
-												<span class="project-tag">Node.js</span>
-												<span class="project-tag">React.js</span>
-											</div>
-											<p class="project-description">
-												A page for registering members through an API.
-											</p>
-											<div class="project-links mt-2">
-												<a href="https://github.com/wsk-24/MemberReact.git" class="button small" target="_blank">GitHub</a>
-												<a href="https://github.com/wsk-24/MemberExpress.git" class="button small" target="_blank">GitHub</a>
-												<a href="javascript:void(0)" class="button small" onclick="openModalVideo('public/video/register1.mp4')">Play Video</a>
-											</div>
-										</div>
-										
-										<div class="project-images">
-											<a href="public/img/projects/register.png" data-lightbox="register" data-title="Register - Image 1">
-												<img src="public/img/projects/register.png" alt="Register Image 1" />
-											</a>
-										</div>
-									</div>
-
-									<hr>
-									
-									<!-- My Map (Learning) -->
-									<div class="project-item">
-										<div class="project-content">
-											<h3 class="project-title">My Map (Learning)</h3>
-											<div class="project-tags">
-												<span class="project-tag">React Vite</span>
-												<span class="project-tag">Node.js</span>
-											</div>
-											<p class="project-description">
-												A page for markers map through an API, learning how to integrate Google Maps with Node.js and React.
-											</p>
-											<div class="project-links mt-2">
-												<a href="https://github.com/wsk-24/MyMapReact.git" class="button small" target="_blank">GitHub</a>
-												<a href="https://github.com/wsk-24/MyMapExpress.git" class="button small" target="_blank">GitHub</a>
-												<a href="javascript:void(0)" class="button small" onclick="openModalVideo('public/video/map.mp4')">Play Video</a>
-											</div>
-										</div>
-										
-										<div class="project-images">
-											<a href="public/img/projects/map1.png" data-lightbox="map" data-title="My Map - Image 1">
-												<img src="public/img/projects/map1.png" alt="My Map Image 1" />
-											</a>
-											<a href="public/img/projects/map2.png" data-lightbox="map" data-title="My Map - Image 2">
-												<img src="public/img/projects/map2.png" alt="My Map Image 2" />
-											</a>
-										</div>
-									</div>
-									
-									<hr>
-
-									<!-- Integrating ID CARD -->
-									<div class="project-item">
-										<div class="project-content">
-											<h3 class="project-title">Integrating ID CARD</h3>
-											<div class="project-tags">
-												<span class="project-tag">Java</span>
-											</div>
-											<p class="project-description">
-												Read data from the ID card and send the information via API.
-											</p>
-											<div class="ms-2">
-												<h5>Reference</h5>
-												<ul>
-													<li><a href="https://rd-comp.com/product/tda39vc/" target="_blank" rel="noopener noreferrer">https://rd-comp.com/product/tda39vc/</a></li>
-												</ul>
-											</div>
-											<div class="project-links mt-2">
-												<!-- <a href="#" class="button small">Live Demo</a> -->
-												<!-- <a href="#" class="button small">Source Code</a> -->
-											</div>
-										</div>
-										
-										<div class="project-images">
-											<a href="public/img/projects/id_card.jpg" data-lightbox="idcard" data-title="ID Card - Image 1">
-												<img src="public/img/projects/id_card.jpg" alt="ID Card Image 1" />
-											</a>
-											<a href="public/img/projects/id_card1.jpg" data-lightbox="idcard" data-title="ID Card - Image 2">
-												<img src="public/img/projects/id_card1.jpg" alt="ID Card Image 2" />
-											</a>
-										</div>
-									</div>
-
-									<hr>
-									
-									<!-- UnicornViewerOffline -->
-									<div class="project-item">
-										<div class="project-content">
-											<h3 class="project-title">UnicornViewerOffline</h3>
-											<div class="project-tags">
-												<span class="project-tag">Flutter</span>
-											</div>
-											<p class="project-description">
-												Compile the application for iOS.
-											</p>
-											<div class="project-links mt-2">
-												<!-- <a href="#" class="button small">Live Demo</a> -->
-												<!-- <a href="#" class="button small">Source Code</a> -->
-											</div>
-										</div>
-										
-										<div class="project-images">
-											<a href="public/img/projects/viewoffline.jpg" data-lightbox="unicornviewer" data-title="UnicornViewerOffline - Image 1">
-												<img src="public/img/projects/viewoffline.jpg" alt="UnicornViewerOffline Image 1" />
-											</a>
-											<a href="public/img/projects/viewoffline1.jpg" data-lightbox="unicornviewer" data-title="UnicornViewerOffline - Image 2">
-												<img src="public/img/projects/viewoffline1.jpg" alt="UnicornViewerOffline Image 2" />
-											</a>
-										</div>
-									</div>
-
-									<hr>
-									
-									<!-- Mookata -->
-									<div class="project-item">
-										<div class="project-content">
-											<h3 class="project-title">Mookata</h3>
-											<div class="project-tags">
-												<span class="project-tag">HTML</span>
-												<span class="project-tag">CSS</span>
-												<span class="project-tag">JavaScript</span>
-												<span class="project-tag">Laravel</span>
-											</div>
-											<p class="project-description">
-												BBQ Stove Borrowing Management System and Login with Google.
-											</p>
-											<div class="project-links mt-2">
-												<!-- <a href="#" class="button small">Live Demo</a> -->
-												<!-- <a href="#" class="button small">Source Code</a> -->
-											</div>
-										</div>
-										
-										<div class="project-images">
-											<a href="public/img/projects/bbq1.jpg" data-lightbox="mookata" data-title="Mookata - Image 1">
-												<img src="public/img/projects/bbq1.jpg" alt="Mookata Image 1" />
-											</a>
-											<a href="public/img/projects/bbq2.jpg" data-lightbox="mookata" data-title="Mookata - Image 2">
-												<img src="public/img/projects/bbq2.jpg" alt="Mookata Image 2" />
-											</a>
-											<a href="public/img/projects/bbq3.jpg" data-lightbox="mookata" data-title="Mookata - Image 3">
-												<img src="public/img/projects/bbq3.jpg" alt="Mookata Image 3" />
-											</a>
-											<a href="public/img/projects/bbq4.jpg" data-lightbox="mookata" data-title="Mookata - Image 4">
-												<img src="public/img/projects/bbq4.jpg" alt="Mookata Image 4" />
-											</a>
-										</div>
-									</div>
-
-									
-									
-									
-									
-								</div>
-							</div>
-						</section>
-						
-							
-
-
-				<!-- Footer -->
-					<footer class="wrapper style1 align-center">
-						<div class="inner">
-							<ul class="icons">
-								
-								<li><a href="https://github.com/wsk-24" target="_blank" class="icon brands style2 fa-git"><span class="label">Git</span></a></li>
-
-								<!-- <li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li> -->
-								<li>
-									<a href="mailto:worasak.sriworawiboon@email.com" class="icon style2 fa-envelope">
-										<span class="label">Email</span>
-									</a>
-								</li>
-							</ul>
-							<p>&copy; Worasak.</p>
-						</div>
-					</footer>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Worasak Sriworawiboon – Full Stack Developer</title>
+	<meta name="description" content="Portfolio of Worasak Sriworawiboon, full stack developer with 9+ years of experience in web, mobile and hospital systems." />
+	<link rel="icon" type="image/png" href="images/favicon.ico" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/css/lightbox.min.css" />
+	<link rel="stylesheet" href="public/css/site.css" />
+</head>
+<body>
+
+<header class="topbar">
+	<div class="container">
+		<a class="brand" href="#top">Worasak S.</a>
+		<nav class="topnav">
+			<a href="#about">About</a>
+			<a href="#skills" class="hide-sm">Skills</a>
+			<a href="#projects">Projects</a>
+			<a href="#contact">Contact</a>
+		</nav>
+	</div>
+</header>
+
+<main id="top">
+
+	<!-- Hero -->
+	<section class="hero">
+		<div class="container">
+			<div>
+				<div class="eyebrow">Full Stack Developer</div>
+				<h1>Worasak Sriworawiboon</h1>
+				<p class="lead">
+					I build web and mobile systems end to end: database, API, web front end and
+					mobile app. Most of my work runs in hospitals, so it has to be reliable and
+					it has to connect to the systems that are already there.
+				</p>
+				<div class="actions">
+					<a class="btn primary" href="#projects">See projects</a>
+					<a class="btn" href="public/pdf/Worasak_Resume.pdf" target="_blank" rel="noopener">Résumé (PDF)</a>
+					<a class="btn" href="https://github.com/wsk-24" target="_blank" rel="noopener">GitHub</a>
+				</div>
+				<div class="facts">
+					<div><strong>9+ years</strong>in software development</div>
+					<div><strong>27 projects</strong>on this page</div>
+					<div><strong>Web · Mobile · API</strong>hospital and business systems</div>
+				</div>
+			</div>
+			<img class="photo" src="images/picture.png" alt="Worasak Sriworawiboon" />
+		</div>
+	</section>
+
+	<!-- About -->
+	<section class="block" id="about">
+		<div class="container">
+			<div class="block-head">
+				<h2>About</h2>
+				<p>
+					I turn what users ask for into a working system, and I look after it once it is live.
+					I own core projects from the first requirement to the production server.
+				</p>
+			</div>
+			<div class="about">
+				<div class="card">
+					<h3>Design &amp; build</h3>
+					<p>Gather requirements, design the data model and the API, then build the web and mobile apps on top of it.</p>
+				</div>
+				<div class="card">
+					<h3>Integrate</h3>
+					<p>Work with in-house IT teams and clients on REST and SOAP integrations, mostly with hospital HIS systems.</p>
+				</div>
+				<div class="card">
+					<h3>Ship &amp; support</h3>
+					<p>Deploy to production servers, fix network and server problems, and run several projects in parallel.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Skills -->
+	<section class="block" id="skills">
+		<div class="container">
+			<div class="block-head">
+				<h2>Skills</h2>
+			</div>
+			<div class="skills">
+				<div class="skill card"><img src="images/icons/php.png" alt="" />PHP</div>
+				<div class="skill card"><img src="images/icons/laravel.png" alt="" />Laravel</div>
+				<div class="skill card"><img src="images/icons/js.png" alt="" />JavaScript</div>
+				<div class="skill card"><img src="images/icons/nodejs.png" alt="" />Node.js</div>
+				<div class="skill card"><img src="images/icons/react.png" alt="" />React</div>
+				<div class="skill card"><img src="images/icons/kotlin.png" alt="" />Kotlin</div>
+				<div class="skill card"><img src="images/icons/flutter.png" alt="" />Flutter</div>
+				<div class="skill card"><img src="images/icons/swift.png" alt="" />Swift</div>
+				<div class="skill card"><img src="images/icons/python.png" alt="" />Python</div>
+				<div class="skill card"><img src="images/icons/c_sharp.png" alt="" />C#</div>
+				<div class="skill card"><img src="images/icons/html5.png" alt="" />HTML5</div>
+				<div class="skill card"><img src="images/icons/css.png" alt="" />CSS3</div>
+			</div>
+			<div class="skill-groups">
+				<div class="card">
+					<h3>Databases</h3>
+					<div class="tags"><span class="tag">Oracle</span><span class="tag">PostgreSQL</span><span class="tag">MySQL</span></div>
+				</div>
+				<div class="card">
+					<h3>Integration</h3>
+					<div class="tags"><span class="tag">REST</span><span class="tag">SOAP</span><span class="tag">JWT</span><span class="tag">Basic Auth</span><span class="tag">Socket.IO</span><span class="tag">Firebase</span><span class="tag">Google Maps API</span></div>
+				</div>
+				<div class="card">
+					<h3>Servers &amp; tools</h3>
+					<div class="tags"><span class="tag">IIS</span><span class="tag">XAMPP</span><span class="tag">AWS (Windows Server)</span><span class="tag">Google Cloud</span><span class="tag">Git</span><span class="tag">Postman</span><span class="tag">Swagger</span></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Projects -->
+	<section class="block" id="projects">
+		<div class="container">
+			<div class="block-head">
+				<h2>Projects</h2>
+				<p>Click any screenshot to enlarge it. The list below jumps straight to a project.</p>
 			</div>
 
-			   <!-- Modal สำหรับแสดงวิดีโอ -->
-			   <div class="modal-v" id="videoModal">
-				<div class="modal-content-v">
-					<span class="close-v" onclick="closeModalVideo()">&times;</span>
-					<video id="modalVideo" class="modal-video" controls>
-						<source id="videoSource" src="" type="video/mp4">
-						Your browser does not support the video tag.
-					</video>
+			<p class="note">
+				<span class="badge ai">AI-assisted</span>
+				I built these with an AI coding assistant (Claude Code). I wrote the requirements,
+				data model and flows, and I reviewed and tested every module. The assistant helped write the code.
+			</p>
+
+			<div class="index-group">
+				<h3>Recent projects</h3>
+				<div class="index">
+					<a class="card" href="#p-pixel-management"><b>Pixel Management</b><span>Company management: projects, HR, overtime</span></a>
+					<a class="card" href="#p-posx2"><b>PosX2</b><span>Retail POS with stock, reports and an owner app</span></a>
+					<a class="card" href="#p-carenest"><b>CareNest</b><span>Care home management, sold as SaaS</span></a>
+					<a class="card" href="#p-baan-insight"><b>Baan Insight</b><span>Real estate search with maps and AI search</span></a>
+					<a class="card" href="#p-ducknovel"><b>DuckNovel</b><span>Novel &amp; webtoon platform (live)</span></a>
+					<a class="card" href="#p-pixelscan"><b>PixelScan Online</b><span>Hospital document scan station</span></a>
+					<a class="card" href="#p-thaiprofit"><b>ThaiProfit</b><span>Profit calculator for online sellers</span></a>
+					<a class="card" href="#p-dailyjober"><b>DailyJober</b><span>Map-based daily job board</span></a>
+					<a class="card" href="#p-toolbox"><b>Toolbox</b><span>28 free tools that run in the browser</span></a>
+					<a class="card" href="#p-datadict"><b>DataDict</b><span>Data dictionary generator to Excel</span></a>
+					<a class="card" href="#p-coffee"><b>Smile Coffee</b><span>Coffee shop ordering and queue</span></a>
+				</div>
+			</div>
+			<div class="index-group">
+				<h3>Client &amp; workplace projects</h3>
+				<div class="index">
+					<a class="card" href="#p-pettag"><b>Pettag Thailand</b><span>QR pet tags, lost &amp; found alerts</span></a>
+					<a class="card" href="#p-medimage"><b>MedImage</b><span>Medical procedure photos and drawing</span></a>
+					<a class="card" href="#p-eyeq"><b>EyeQ System</b><span>Real-time patient queue calling</span></a>
+					<a class="card" href="#p-econsents"><b>Econsents</b><span>Electronic consent forms</span></a>
+					<a class="card" href="#p-emr"><b>EMR</b><span>Patient record search (OPD / IPD)</span></a>
+					<a class="card" href="#p-assessment"><b>Assessment</b><span>Staff performance evaluation</span></a>
+					<a class="card" href="#p-pacc"><b>PACC</b><span>Anti-corruption complaint system</span></a>
+					<a class="card" href="#p-tele"><b>Tele Conference</b><span>Doctor–patient video call (demo)</span></a>
+					<a class="card" href="#p-tracking"><b>Tracking App</b><span>Patient transporter tracking (prototype)</span></a>
+					<a class="card" href="#p-viewer-offline"><b>Unicorn Viewer Offline</b><span>iOS build of a Flutter viewer</span></a>
+					<a class="card" href="#p-mookata"><b>Mookata</b><span>BBQ stove borrowing system</span></a>
+				</div>
+			</div>
+			<div class="index-group">
+				<h3>Experiments &amp; learning</h3>
+				<div class="index">
+					<a class="card" href="#p-colmi"><b>Colmi Smart Ring</b><span>Read ring data with Python</span></a>
+					<a class="card" href="#p-idcard"><b>ID Card Reader</b><span>Thai ID card to API</span></a>
+					<a class="card" href="#p-merge"><b>Merge &amp; Watermark PDF</b><span>Python PDF tool</span></a>
+					<a class="card" href="#p-register"><b>Register</b><span>React + Express sign-up</span></a>
+					<a class="card" href="#p-mymap"><b>My Map</b><span>Google Maps markers via API</span></a>
 				</div>
 			</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/js/lightbox-plus-jquery.min.js"></script>
-			<script src="public/js/my.js"></script>
+			<!-- ════════════════ Recent projects ════════════════ -->
+			<h2 class="group-title">Recent projects<small>Full systems, from database to front end.</small></h2>
 
-			<script>
-				const container = document.getElementById("pettag-images");
-			  
-				for (let i = 1; i <= 38; i++) {
-				  const imgNumber = i;
-				  const imgSrc = `public/img/projects/pettag${imgNumber}.jpg`;
-			  
-				  const anchor = document.createElement("a");
-				  anchor.href = imgSrc;
-				  anchor.setAttribute("data-lightbox", "pettag");
-				  anchor.setAttribute("data-title", `Pettag Thailand - Image ${imgNumber}`);
-			  
-				  const img = document.createElement("img");
-				  img.src = imgSrc;
-				  img.alt = `Pettag Thailand Image ${imgNumber}`;
-			  
-				  anchor.appendChild(img);
-				  container.appendChild(anchor);
-				}
-			</script>
+			<!-- Pixel Management -->
+			<article class="project card" id="p-pixel-management">
+				<div class="project-head">
+					<h3>Pixel Management</h3>
+					<span class="badge ai">AI-assisted</span>
+				</div>
+				<p class="summary">
+					An internal system for running a software company: projects, tasks, people, leave
+					and overtime in one place. There is a web app for the office and a Flutter app for the team on the go.
+				</p>
+				<div class="tags">
+					<span class="tag">React 19</span><span class="tag">TypeScript</span><span class="tag">Vite</span>
+					<span class="tag">Node.js / Express</span><span class="tag">PostgreSQL</span><span class="tag">JWT</span>
+					<span class="tag">Flutter</span><span class="tag">Firebase</span>
+				</div>
+				<ul class="highlights">
+					<li>Dashboard with KPIs, charts and team activity</li>
+					<li>Projects and a Kanban board with @mentions and image attachments</li>
+					<li>Daily work reports, notes, files and a support / incident log</li>
+					<li>Leave requests with entitlements and approval</li>
+					<li>Duty roster with shift swap requests</li>
+					<li>Overtime approval with a payroll summary, plus expense claims</li>
+					<li>Team directory, messages, notifications and a shared calendar</li>
+					<li>Roles (admin, HR, manager, staff); sign in with employee ID or email</li>
+					<li>Thai / English, per-user accent colour and layout</li>
+					<li>Flutter app with push notifications</li>
+				</ul>
+				<div class="gallery">
+					<a href="public/img/projects/company2.jpg" data-lightbox="company" data-title="Pixel Management – Dashboard"><img loading="lazy" src="public/img/projects/company2.jpg" alt="Dashboard" /></a>
+					<a href="public/img/projects/company5.jpg" data-lightbox="company" data-title="Pixel Management – Kanban board"><img loading="lazy" src="public/img/projects/company5.jpg" alt="Kanban board" /></a>
+					<a href="public/img/projects/company3.jpg" data-lightbox="company" data-title="Pixel Management – Analytics"><img loading="lazy" src="public/img/projects/company3.jpg" alt="Analytics" /></a>
+					<a href="public/img/projects/company4.jpg" data-lightbox="company" data-title="Pixel Management – Projects"><img loading="lazy" src="public/img/projects/company4.jpg" alt="Projects" /></a>
+					<a href="public/img/projects/company7.jpg" data-lightbox="company" data-title="Pixel Management – Duty roster"><img loading="lazy" src="public/img/projects/company7.jpg" alt="Duty roster" /></a>
+					<a href="public/img/projects/company8.jpg" data-lightbox="company" data-title="Pixel Management – Overtime"><img loading="lazy" src="public/img/projects/company8.jpg" alt="Overtime" /></a>
+					<a href="public/img/projects/company9.jpg" data-lightbox="company" data-title="Pixel Management – Calendar"><img loading="lazy" src="public/img/projects/company9.jpg" alt="Calendar" /></a>
+					<a href="public/img/projects/company10.jpg" data-lightbox="company" data-title="Pixel Management – Team"><img loading="lazy" src="public/img/projects/company10.jpg" alt="Team" /></a>
+					<a href="public/img/projects/company11.jpg" data-lightbox="company" data-title="Pixel Management – Messages"><img loading="lazy" src="public/img/projects/company11.jpg" alt="Messages" /></a>
+					<a href="public/img/projects/company6.jpg" data-lightbox="company" data-title="Pixel Management – Leave"><img loading="lazy" src="public/img/projects/company6.jpg" alt="Leave" /></a>
+					<a href="public/img/projects/company1.jpg" data-lightbox="company" data-title="Pixel Management – Sign in"><img loading="lazy" src="public/img/projects/company1.jpg" alt="Sign in" /></a>
+				</div>
+			</article>
 
-	</body>
+			<!-- PosX2 -->
+			<article class="project card" id="p-posx2">
+				<div class="project-head">
+					<h3>PosX2 – Retail POS</h3>
+					<span class="badge ai">AI-assisted</span>
+				</div>
+				<p class="summary">
+					A point-of-sale system for small shops. The till, the stock and the takings live in one
+					place: staff sell from a web till, and the owner checks sales and profit on a mobile app.
+				</p>
+				<div class="tags">
+					<span class="tag">Laravel 12 API</span><span class="tag">React 19</span><span class="tag">TypeScript</span>
+					<span class="tag">Tailwind CSS 4</span><span class="tag">PostgreSQL</span><span class="tag">Flutter</span><span class="tag">Docker</span>
+				</div>
+				<ul class="highlights">
+					<li>Fast till: barcode scanning, keyboard shortcuts, product photos</li>
+					<li>Payments by cash, card, bank transfer or PromptPay QR; printable receipts</li>
+					<li>Stock ledger with low-stock alerts, adjustments and a stock card per item</li>
+					<li>Purchases from suppliers and customer returns</li>
+					<li>Cash drawer sessions: open, close and count the drawer</li>
+					<li>Reports and an analysis page that compares like-for-like periods; Excel / PDF export</li>
+					<li>Roles with a permission matrix, plus an audit log of every change</li>
+					<li>Flutter owner app; Thai / English; 300+ automated tests</li>
+				</ul>
+				<div class="gallery">
+					<a href="public/img/projects/posx2_3.jpg" data-lightbox="posx2" data-title="PosX2 – Till"><img loading="lazy" src="public/img/projects/posx2_3.jpg" alt="Till" /></a>
+					<a href="public/img/projects/posx2_2.jpg" data-lightbox="posx2" data-title="PosX2 – Overview"><img loading="lazy" src="public/img/projects/posx2_2.jpg" alt="Overview" /></a>
+					<a href="public/img/projects/posx2_6.jpg" data-lightbox="posx2" data-title="PosX2 – Analysis"><img loading="lazy" src="public/img/projects/posx2_6.jpg" alt="Analysis" /></a>
+					<a href="public/img/projects/posx2_7.jpg" data-lightbox="posx2" data-title="PosX2 – Reports"><img loading="lazy" src="public/img/projects/posx2_7.jpg" alt="Reports" /></a>
+					<a href="public/img/projects/posx2_4.jpg" data-lightbox="posx2" data-title="PosX2 – Products"><img loading="lazy" src="public/img/projects/posx2_4.jpg" alt="Products" /></a>
+					<a href="public/img/projects/posx2_5.jpg" data-lightbox="posx2" data-title="PosX2 – Stock"><img loading="lazy" src="public/img/projects/posx2_5.jpg" alt="Stock" /></a>
+					<a href="public/img/projects/posx2_1.jpg" data-lightbox="posx2" data-title="PosX2 – Sign in"><img loading="lazy" src="public/img/projects/posx2_1.jpg" alt="Sign in" /></a>
+				</div>
+			</article>
+
+			<!-- CareNest -->
+			<article class="project card" id="p-carenest">
+				<div class="project-head">
+					<h3>CareNest – Care Home Management</h3>
+					<span class="badge ai">AI-assisted</span>
+					<span class="badge kind">SaaS</span>
+				</div>
+				<p class="summary">
+					Software for nursing and elderly care homes. It follows a resident's whole stay
+					(admission, bed, daily care, medicine, meals, appointments and billing) and is sold by subscription.
+				</p>
+				<div class="tags">
+					<span class="tag">React 19</span><span class="tag">TypeScript</span><span class="tag">Tailwind CSS</span>
+					<span class="tag">Node.js / Express</span><span class="tag">Prisma</span><span class="tag">PostgreSQL</span><span class="tag">Flutter</span>
+				</div>
+				<ul class="highlights">
+					<li>Resident records: history, allergies, contacts, assessments, photos</li>
+					<li>Rooms and beds: buildings, floors, transfers and history</li>
+					<li>Daily care: vital signs, ADL, hygiene and nursing notes</li>
+					<li>Medication schedules and administration records (light eMAR)</li>
+					<li>Meal plans, food allergies and intake tracking</li>
+					<li>Doctor appointments and physical therapy progress</li>
+					<li>Billing: charges, invoices, payments and receipts</li>
+					<li>Staff roles with a permission matrix, and a family portal for relatives</li>
+				</ul>
+				<div class="gallery">
+					<a href="public/img/projects/carenest2.jpg" data-lightbox="carenest" data-title="CareNest – Dashboard"><img loading="lazy" src="public/img/projects/carenest2.jpg" alt="Dashboard" /></a>
+					<a href="public/img/projects/carenest3.jpg" data-lightbox="carenest" data-title="CareNest – Residents"><img loading="lazy" src="public/img/projects/carenest3.jpg" alt="Residents" /></a>
+					<a href="public/img/projects/carenest4.jpg" data-lightbox="carenest" data-title="CareNest – Rooms &amp; beds"><img loading="lazy" src="public/img/projects/carenest4.jpg" alt="Rooms and beds" /></a>
+					<a href="public/img/projects/carenest5.jpg" data-lightbox="carenest" data-title="CareNest – Pricing plans"><img loading="lazy" src="public/img/projects/carenest5.jpg" alt="Pricing plans" /></a>
+					<a href="public/img/projects/carenest1.jpg" data-lightbox="carenest" data-title="CareNest – Sign in"><img loading="lazy" src="public/img/projects/carenest1.jpg" alt="Sign in" /></a>
+				</div>
+			</article>
+
+			<!-- Baan Insight -->
+			<article class="project card" id="p-baan-insight">
+				<div class="project-head">
+					<h3>Baan Insight – Real Estate Platform</h3>
+					<span class="badge ai">AI-assisted</span>
+				</div>
+				<p class="summary">
+					A Thai property site that helps buyers decide, not just browse. It shows whether a home fits
+					their needs, how the price compares and what to check before they call an agent.
+				</p>
+				<div class="tags">
+					<span class="tag">Laravel 12</span><span class="tag">MySQL</span><span class="tag">Bootstrap 5</span>
+					<span class="tag">Vite</span><span class="tag">Leaflet / OpenStreetMap</span>
+				</div>
+				<ul class="highlights">
+					<li>Search with filters, a match score for the buyer's own criteria, and side-by-side compare</li>
+					<li>Map search with layers for hospitals, schools, transport and markets</li>
+					<li>AI search: type a request in Thai or English and it becomes filters</li>
+					<li>Price per square metre against similar listings (shown as listing data, not an appraisal)</li>
+					<li>Agent portal: listings, leads and viewing appointments</li>
+					<li>Deal room with shared documents and messages</li>
+					<li>Admin: listing moderation, verification, reports and translations</li>
+					<li>Email notifications and daily saved-search alerts; Thai / English URLs; 130+ tests</li>
+				</ul>
+				<div class="gallery">
+					<a href="public/img/projects/estate1.jpg" data-lightbox="estate" data-title="Baan Insight – Home"><img loading="lazy" src="public/img/projects/estate1.jpg" alt="Home" /></a>
+					<a href="public/img/projects/estate2.jpg" data-lightbox="estate" data-title="Baan Insight – Search"><img loading="lazy" src="public/img/projects/estate2.jpg" alt="Search" /></a>
+					<a href="public/img/projects/estate4.jpg" data-lightbox="estate" data-title="Baan Insight – Map with places"><img loading="lazy" src="public/img/projects/estate4.jpg" alt="Map" /></a>
+					<a href="public/img/projects/estate5.jpg" data-lightbox="estate" data-title="Baan Insight – AI search"><img loading="lazy" src="public/img/projects/estate5.jpg" alt="AI search" /></a>
+					<a href="public/img/projects/estate3.jpg" data-lightbox="estate" data-title="Baan Insight – Listing page"><img loading="lazy" src="public/img/projects/estate3.jpg" alt="Listing" /></a>
+					<a href="public/img/projects/estate6.jpg" data-lightbox="estate" data-title="Baan Insight – Admin overview"><img loading="lazy" src="public/img/projects/estate6.jpg" alt="Admin" /></a>
+				</div>
+			</article>
+
+			<!-- DuckNovel -->
+			<article class="project card" id="p-ducknovel">
+				<div class="project-head">
+					<h3>DuckNovel – Novel &amp; Webtoon Platform</h3>
+					<span class="badge ai">AI-assisted</span>
+					<span class="badge live">Live</span>
+				</div>
+				<p class="summary">
+					A Thai site for reading novels and webtoons. Readers unlock chapters with coins;
+					writers publish, follow their numbers and get paid.
+				</p>
+				<div class="tags">
+					<span class="tag">Laravel 13</span><span class="tag">PHP 8.5</span><span class="tag">MySQL</span>
+					<span class="tag">Tailwind CSS</span><span class="tag">Opn Payments</span><span class="tag">Google / LINE login</span>
+				</div>
+				<ul class="highlights">
+					<li>Rankings, genres, tags, search with autocomplete and a personal library</li>
+					<li>Coin wallet on a ledger: card or PromptPay top-up, receipts and refunds</li>
+					<li>Writer studio: rich-text editor, scheduled chapters, cartoon uploads</li>
+					<li>Views and sales charts, earnings wallet and payout requests</li>
+					<li>Admin: users, reports, moderation, payouts and a security log</li>
+					<li>18+ age gate, PDPA data export and account deletion</li>
+					<li>SEO: sitemaps, structured data, generated share images</li>
+					<li>270+ automated feature tests</li>
+				</ul>
+				<div class="links">
+					<a class="btn primary sm" href="https://ducknovel.com" target="_blank" rel="noopener noreferrer">Visit ducknovel.com</a>
+				</div>
+				<div class="gallery">
+					<a href="public/img/projects/venol1.jpg" data-lightbox="venol" data-title="DuckNovel – Home"><img loading="lazy" src="public/img/projects/venol1.jpg" alt="Home" /></a>
+					<a href="public/img/projects/venol3.jpg" data-lightbox="venol" data-title="DuckNovel – Book page"><img loading="lazy" src="public/img/projects/venol3.jpg" alt="Book page" /></a>
+					<a href="public/img/projects/venol4.jpg" data-lightbox="venol" data-title="DuckNovel – Reader"><img loading="lazy" src="public/img/projects/venol4.jpg" alt="Reader" /></a>
+					<a href="public/img/projects/venol5.jpg" data-lightbox="venol" data-title="DuckNovel – Writer dashboard"><img loading="lazy" src="public/img/projects/venol5.jpg" alt="Writer dashboard" /></a>
+					<a href="public/img/projects/venol6.jpg" data-lightbox="venol" data-title="DuckNovel – Coin top-up"><img loading="lazy" src="public/img/projects/venol6.jpg" alt="Coin top-up" /></a>
+					<a href="public/img/projects/venol2.jpg" data-lightbox="venol" data-title="DuckNovel – Explore"><img loading="lazy" src="public/img/projects/venol2.jpg" alt="Explore" /></a>
+				</div>
+			</article>
+
+			<!-- PixelScan Online -->
+			<article class="project card" id="p-pixelscan">
+				<div class="project-head">
+					<h3>PixelScan Online – Hospital Document Scanning</h3>
+					<span class="badge ai">AI-assisted</span>
+				</div>
+				<p class="summary">
+					A web version of a desktop scan station used by hospital medical records staff.
+					Paper documents are scanned, indexed against the patient record and filed into the
+					OPD / IPD cabinets of the existing EMR scan database.
+				</p>
+				<div class="tags">
+					<span class="tag">FastAPI</span><span class="tag">Python</span><span class="tag">React 19</span>
+					<span class="tag">PostgreSQL</span><span class="tag">TWAIN scanner agent</span><span class="tag">PyMuPDF</span><span class="tag">Barcode (zxing)</span>
+				</div>
+				<ul class="highlights">
+					<li>Staff sign in with their existing EMR account and permissions</li>
+					<li>Cabinets and document types come straight from the EMR database</li>
+					<li>Type an HN and the patient's visit details are filled in from the HIS</li>
+					<li>A small agent on the client PC drives the scanner (TWAIN) and auto-detects it</li>
+					<li>Batch mode: scan a whole stack, split it at barcode separator sheets into documents</li>
+					<li>Review pages in a grid, rotate and crop before saving</li>
+					<li>Activity log for every scan and edit</li>
+					<li>Watchdog restarts the agent if a scanner driver hangs</li>
+				</ul>
+				<p class="ref">Screenshots use demo data, not real patient records.</p>
+				<div class="gallery">
+					<a href="public/img/projects/pixelscan2.jpg" data-lightbox="pixelscan" data-title="PixelScan Online – Cabinet and documents"><img loading="lazy" src="public/img/projects/pixelscan2.jpg" alt="Cabinet" /></a>
+					<a href="public/img/projects/pixelscan6.jpg" data-lightbox="pixelscan" data-title="PixelScan Online – New document"><img loading="lazy" src="public/img/projects/pixelscan6.jpg" alt="New document" /></a>
+					<a href="public/img/projects/pixelscan5.jpg" data-lightbox="pixelscan" data-title="PixelScan Online – Scanner settings"><img loading="lazy" src="public/img/projects/pixelscan5.jpg" alt="Scanner settings" /></a>
+					<a href="public/img/projects/pixelscan3.jpg" data-lightbox="pixelscan" data-title="PixelScan Online – Activity log"><img loading="lazy" src="public/img/projects/pixelscan3.jpg" alt="Activity log" /></a>
+					<a href="public/img/projects/pixelscan1.jpg" data-lightbox="pixelscan" data-title="PixelScan Online – Sign in"><img loading="lazy" src="public/img/projects/pixelscan1.jpg" alt="Sign in" /></a>
+				</div>
+			</article>
+
+			<!-- ThaiProfit -->
+			<article class="project card" id="p-thaiprofit">
+				<div class="project-head">
+					<h3>ThaiProfit – Profit Calculator for Online Sellers</h3>
+					<span class="badge ai">AI-assisted</span>
+				</div>
+				<p class="summary">
+					Shows sellers on Shopee, Lazada and TikTok Shop what they really keep after platform fees,
+					shipping, ads and costs, for each order and for the whole month.
+				</p>
+				<div class="tags">
+					<span class="tag">Laravel 12</span><span class="tag">MySQL</span><span class="tag">Tailwind CSS</span>
+					<span class="tag">Alpine.js</span><span class="tag">Google login</span>
+				</div>
+				<ul class="highlights">
+					<li>Live profit calculator; the same formulas run in PHP and JavaScript and are tested against shared cases</li>
+					<li>Fee rules are versioned by date, so old results never change</li>
+					<li>Monthly profit and goal planner; ROAS, COD return and campaign tools</li>
+					<li>Saved calculations and a product list (CSV import / export)</li>
+					<li>Import platform settlement files and ad spend reports</li>
+					<li>Profit &amp; loss report with charts and Excel / PDF export</li>
+					<li>Admin for fee rules, users, blog and SEO pages</li>
+				</ul>
+				<div class="gallery">
+					<a href="public/img/projects/thaiprofit1.jpg" data-lightbox="thaiprofit" data-title="ThaiProfit – Calculator"><img loading="lazy" src="public/img/projects/thaiprofit1.jpg" alt="Calculator" /></a>
+					<a href="public/img/projects/thaiprofit2.jpg" data-lightbox="thaiprofit" data-title="ThaiProfit – Monthly profit"><img loading="lazy" src="public/img/projects/thaiprofit2.jpg" alt="Monthly profit" /></a>
+					<a href="public/img/projects/thaiprofit3.jpg" data-lightbox="thaiprofit" data-title="ThaiProfit – Profit &amp; loss"><img loading="lazy" src="public/img/projects/thaiprofit3.jpg" alt="Profit and loss" /></a>
+					<a href="public/img/projects/thaiprofit4.jpg" data-lightbox="thaiprofit" data-title="ThaiProfit – Settlement report"><img loading="lazy" src="public/img/projects/thaiprofit4.jpg" alt="Settlement report" /></a>
+					<a href="public/img/projects/thaiprofit5.jpg" data-lightbox="thaiprofit" data-title="ThaiProfit – Products"><img loading="lazy" src="public/img/projects/thaiprofit5.jpg" alt="Products" /></a>
+					<a href="public/img/projects/thaiprofit6.jpg" data-lightbox="thaiprofit" data-title="ThaiProfit – Admin"><img loading="lazy" src="public/img/projects/thaiprofit6.jpg" alt="Admin" /></a>
+				</div>
+			</article>
+
+			<!-- DailyJober -->
+			<article class="project card" id="p-dailyjober">
+				<div class="project-head">
+					<h3>DailyJober – Nearby Daily Jobs</h3>
+					<span class="badge ai">AI-assisted</span>
+				</div>
+				<p class="summary">
+					A job board for daily and short-term work. Job seekers find work near them on a map;
+					employers post jobs and manage applicants in their own portal.
+				</p>
+				<div class="tags">
+					<span class="tag">React 19</span><span class="tag">Vite</span><span class="tag">Node.js / Express</span>
+					<span class="tag">PostgreSQL</span><span class="tag">JWT</span>
+				</div>
+				<ul class="highlights">
+					<li>Map search by radius, with real distances worked out in SQL</li>
+					<li>Filters by category, keyword and conditions (same-day pay, meals)</li>
+					<li>Save a job or apply in one tap</li>
+					<li>Employer portal: post jobs, pin the location, accept or reject applicants</li>
+					<li>A job closes by itself when the headcount is reached</li>
+					<li>Blog with an editor and Google AdSense settings; mobile-first design</li>
+				</ul>
+				<div class="gallery">
+					<a href="public/img/projects/dailyjob1.jpg" data-lightbox="dailyjob" data-title="DailyJober – Home"><img loading="lazy" src="public/img/projects/dailyjob1.jpg" alt="Home" /></a>
+					<a href="public/img/projects/dailyjob2.jpg" data-lightbox="dailyjob" data-title="DailyJober – Map search"><img loading="lazy" src="public/img/projects/dailyjob2.jpg" alt="Map search" /></a>
+					<a href="public/img/projects/dailyjob4.jpg" data-lightbox="dailyjob" data-title="DailyJober – Employer portal"><img loading="lazy" src="public/img/projects/dailyjob4.jpg" alt="Employer portal" /></a>
+					<a href="public/img/projects/dailyjob3.jpg" data-lightbox="dailyjob" data-title="DailyJober – Blog"><img loading="lazy" src="public/img/projects/dailyjob3.jpg" alt="Blog" /></a>
+					<a href="public/img/projects/dailyjobm1.jpg" data-lightbox="dailyjob" data-title="DailyJober – Mobile home"><img loading="lazy" src="public/img/projects/dailyjobm1.jpg" alt="Mobile home" /></a>
+					<a href="public/img/projects/dailyjobm2.jpg" data-lightbox="dailyjob" data-title="DailyJober – Mobile job list"><img loading="lazy" src="public/img/projects/dailyjobm2.jpg" alt="Mobile job list" /></a>
+				</div>
+			</article>
+
+			<!-- Toolbox -->
+			<article class="project card" id="p-toolbox">
+				<div class="project-head">
+					<h3>Toolbox – Free Online Tools</h3>
+					<span class="badge ai">AI-assisted</span>
+				</div>
+				<p class="summary">
+					A site of 28 everyday tools for images, PDFs, Thai text, developers and Thai labour law.
+					Everything runs in the visitor's browser, so files are never uploaded.
+				</p>
+				<div class="tags">
+					<span class="tag">Laravel 12</span><span class="tag">MySQL</span><span class="tag">JavaScript</span>
+					<span class="tag">pdf.js / pdf-lib</span><span class="tag">SEO</span><span class="tag">AdSense</span>
+				</div>
+				<ul class="highlights">
+					<li>Image compress / resize / convert, PDF merge and PDF to image</li>
+					<li>Thai tools: fix text typed in the wrong keyboard layout, split Thai addresses into fields</li>
+					<li>Severance and overtime pay calculators based on the Thai Labour Protection Act</li>
+					<li>Developer tools: JSON, SQL, regex, JWT, cron, UUID, QR code and more</li>
+					<li>Thai / English pages with SEO (sitemap, structured data, share images)</li>
+					<li>PDPA cookie consent; ads stay off until the visitor chooses</li>
+				</ul>
+				<div class="gallery">
+					<a href="public/img/projects/tools1.jpg" data-lightbox="tools" data-title="Toolbox – Home"><img loading="lazy" src="public/img/projects/tools1.jpg" alt="Home" /></a>
+					<a href="public/img/projects/tools4.jpg" data-lightbox="tools" data-title="Toolbox – Thai address splitter"><img loading="lazy" src="public/img/projects/tools4.jpg" alt="Thai address splitter" /></a>
+					<a href="public/img/projects/tools6.jpg" data-lightbox="tools" data-title="Toolbox – Severance pay calculator"><img loading="lazy" src="public/img/projects/tools6.jpg" alt="Severance pay" /></a>
+					<a href="public/img/projects/tools5.jpg" data-lightbox="tools" data-title="Toolbox – QR code generator"><img loading="lazy" src="public/img/projects/tools5.jpg" alt="QR code" /></a>
+					<a href="public/img/projects/tools7.jpg" data-lightbox="tools" data-title="Toolbox – JSON formatter"><img loading="lazy" src="public/img/projects/tools7.jpg" alt="JSON formatter" /></a>
+					<a href="public/img/projects/tools2.jpg" data-lightbox="tools" data-title="Toolbox – Image compressor"><img loading="lazy" src="public/img/projects/tools2.jpg" alt="Image compressor" /></a>
+					<a href="public/img/projects/tools3.jpg" data-lightbox="tools" data-title="Toolbox – PDF merge"><img loading="lazy" src="public/img/projects/tools3.jpg" alt="PDF merge" /></a>
+				</div>
+			</article>
+
+			<!-- DataDict -->
+			<article class="project card" id="p-datadict">
+				<div class="project-head">
+					<h3>DataDict – Data Dictionary Generator</h3>
+					<span class="badge kind">Tool</span>
+				</div>
+				<p class="summary">
+					Connect to a MySQL database and get a ready-to-share data dictionary in Excel:
+					every table, column, key and index, without writing documentation by hand.
+				</p>
+				<div class="tags">
+					<span class="tag">Python</span><span class="tag">Flask</span><span class="tag">Socket.IO</span>
+					<span class="tag">SQLAlchemy</span><span class="tag">pandas / openpyxl</span>
+				</div>
+				<ul class="highlights">
+					<li>Live scan log and progress bar over WebSocket</li>
+					<li>Options for row counts, foreign keys, indexes and sample rows</li>
+					<li>Results table with search</li>
+					<li>One-click styled .xlsx download with colour-coded sheets</li>
+				</ul>
+				<div class="gallery">
+					<a href="public/img/projects/datadict3.jpg" data-lightbox="datadict" data-title="DataDict – Scan result"><img loading="lazy" src="public/img/projects/datadict3.jpg" alt="Scan result" /></a>
+					<a href="public/img/projects/datadict2.jpg" data-lightbox="datadict" data-title="DataDict – Scanning"><img loading="lazy" src="public/img/projects/datadict2.jpg" alt="Scanning" /></a>
+					<a href="public/img/projects/datadict4.jpg" data-lightbox="datadict" data-title="DataDict – Search tables"><img loading="lazy" src="public/img/projects/datadict4.jpg" alt="Search tables" /></a>
+					<a href="public/img/projects/datadict1.jpg" data-lightbox="datadict" data-title="DataDict – Connection"><img loading="lazy" src="public/img/projects/datadict1.jpg" alt="Connection" /></a>
+				</div>
+			</article>
+
+			<!-- Smile Coffee -->
+			<article class="project card" id="p-coffee">
+				<div class="project-head">
+					<h3>Smile Coffee – Order &amp; Queue System</h3>
+					<span class="badge kind">Self-learning</span>
+				</div>
+				<p class="summary">
+					Customers order from their phone; the counter sees the order at once and works through the queue.
+					A display screen shows which orders are being made and which are ready to collect.
+				</p>
+				<div class="tags">
+					<span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">Vite</span>
+					<span class="tag">FastAPI</span><span class="tag">PostgreSQL</span><span class="tag">WebSocket</span>
+				</div>
+				<ul class="highlights">
+					<li>Mobile-friendly menu by category, with a cart and order summary</li>
+					<li>New orders reach the staff screen in real time, with a sound alert</li>
+					<li>Queue board: waiting, preparing, ready, collected</li>
+					<li>Pickup display for customers, kept in sync over WebSocket</li>
+				</ul>
+				<div class="links">
+					<button type="button" class="btn sm" data-video="public/video/smile_coffee_react_flask.mp4">▶ Watch demo video</button>
+				</div>
+				<div class="gallery">
+					<a href="public/img/projects/coffee1.jpg" data-lightbox="coffee" data-title="Smile Coffee – Menu"><img loading="lazy" src="public/img/projects/coffee1.jpg" alt="Menu" /></a>
+					<a href="public/img/projects/coffee4.jpg" data-lightbox="coffee" data-title="Smile Coffee – Cart"><img loading="lazy" src="public/img/projects/coffee4.jpg" alt="Cart" /></a>
+					<a href="public/img/projects/coffee2.jpg" data-lightbox="coffee" data-title="Smile Coffee – Order queue (staff)"><img loading="lazy" src="public/img/projects/coffee2.jpg" alt="Order queue" /></a>
+					<a href="public/img/projects/coffee3.jpg" data-lightbox="coffee" data-title="Smile Coffee – Pickup display"><img loading="lazy" src="public/img/projects/coffee3.jpg" alt="Pickup display" /></a>
+				</div>
+			</article>
+
+			<!-- ════════════════ Client & workplace projects ════════════════ -->
+			<h2 class="group-title">Client &amp; workplace projects<small>Mostly hospital systems, built and maintained in production.</small></h2>
+
+			<!-- Pettag -->
+			<article class="project card" id="p-pettag">
+				<div class="project-head">
+					<h3>Pettag Thailand</h3>
+					<span class="badge kind">Freelance</span>
+					<span class="badge live">On Google Play</span>
+				</div>
+				<p class="summary">
+					A mobile app for pet owners. Each pet gets a QR tag on its collar; if the pet is lost and someone
+					scans the tag, the owner is notified straight away.
+				</p>
+				<div class="tags">
+					<span class="tag">Flutter</span><span class="tag">Laravel API</span><span class="tag">Firebase</span><span class="tag">Google Maps</span>
+				</div>
+				<ul class="highlights">
+					<li>Register and manage pet profiles</li>
+					<li>QR tags for collars and accessories</li>
+					<li>Real-time alert to the owner when a lost pet's tag is scanned</li>
+					<li>Nearby vets, pet shops, grooming and events on a map</li>
+				</ul>
+				<div class="links">
+					<a class="btn primary sm" href="https://play.google.com/store/apps/details?id=com.fil57tech.pettagthailand" target="_blank" rel="noopener">Google Play</a>
+					<button type="button" class="btn sm" data-video="public/video/pettag.mp4">▶ Watch demo video</button>
+				</div>
+				<div class="gallery tall" id="pettag-images"></div>
+			</article>
+
+			<!-- MedImage -->
+			<article class="project card" id="p-medimage">
+				<div class="project-head">
+					<h3>MedImage</h3>
+					<span class="badge live">App Store &amp; Google Play</span>
+				</div>
+				<p class="summary">
+					A phone and tablet app for doctors and medical students to record procedures with photos and
+					drawings. Records go straight into the hospital's HIS.
+				</p>
+				<div class="tags">
+					<span class="tag">Kotlin</span><span class="tag">Swift</span><span class="tag">PHP</span>
+					<span class="tag">SOAP</span><span class="tag">JavaScript</span>
+				</div>
+				<ul class="highlights">
+					<li>Take photos with a camera guide, then crop</li>
+					<li>Draw on images with pencil, colours and ready-made templates</li>
+					<li>Copy and paste between records</li>
+					<li>Real-time link to the hospital HIS for OPD, IPD and OR</li>
+				</ul>
+				<div class="links">
+					<a class="btn primary sm" href="https://apps.apple.com/th/app/kcmh-medimage/id1539916106" target="_blank" rel="noopener">App Store</a>
+					<a class="btn primary sm" href="https://play.google.com/store/apps/details?id=com.pixel.medimagemobilechula&amp;hl=th" target="_blank" rel="noopener">Google Play</a>
+					<button type="button" class="btn sm" data-video="public/video/medimage_opd.mp4">▶ Watch demo video</button>
+				</div>
+				<div class="gallery">
+					<a href="public/img/projects/med1.png" data-lightbox="medimage" data-title="MedImage"><img loading="lazy" src="public/img/projects/med1.png" alt="MedImage" /></a>
+					<a href="public/img/projects/med2.png" data-lightbox="medimage" data-title="MedImage"><img loading="lazy" src="public/img/projects/med2.png" alt="MedImage" /></a>
+					<a href="public/img/projects/med3.png" data-lightbox="medimage" data-title="MedImage"><img loading="lazy" src="public/img/projects/med3.png" alt="MedImage" /></a>
+					<a href="public/img/projects/med4.png" data-lightbox="medimage" data-title="MedImage"><img loading="lazy" src="public/img/projects/med4.png" alt="MedImage" /></a>
+				</div>
+			</article>
+
+			<!-- EyeQ -->
+			<article class="project card" id="p-eyeq">
+				<div class="project-head">
+					<h3>EyeQ System</h3>
+				</div>
+				<p class="summary">
+					A patient queue system for an eye clinic. Staff call the next patient and every screen updates
+					at once, showing who is being seen now and who was skipped.
+				</p>
+				<div class="tags">
+					<span class="tag">Kotlin</span><span class="tag">PHP</span><span class="tag">Node.js</span>
+					<span class="tag">Socket.IO</span><span class="tag">JavaScript</span>
+				</div>
+				<ul class="highlights">
+					<li>Native Kotlin app for calling queues in real time</li>
+					<li>Shows the current patient's details</li>
+					<li>Separate screen for skipped patients</li>
+					<li>Connected to the hospital HIS</li>
+				</ul>
+				<div class="links">
+					<button type="button" class="btn sm" data-video="public/video/eye1.mp4">▶ Watch demo video</button>
+				</div>
+				<div class="gallery">
+					<a href="public/img/projects/eye10.jpg" data-lightbox="eyeq" data-title="EyeQ System"><img loading="lazy" src="public/img/projects/eye10.jpg" alt="EyeQ" /></a>
+					<a href="public/img/projects/eye6.jpg" data-lightbox="eyeq" data-title="EyeQ System"><img loading="lazy" src="public/img/projects/eye6.jpg" alt="EyeQ" /></a>
+					<a href="public/img/projects/eye7.jpg" data-lightbox="eyeq" data-title="EyeQ System"><img loading="lazy" src="public/img/projects/eye7.jpg" alt="EyeQ" /></a>
+					<a href="public/img/projects/eye8.jpg" data-lightbox="eyeq" data-title="EyeQ System"><img loading="lazy" src="public/img/projects/eye8.jpg" alt="EyeQ" /></a>
+					<a href="public/img/projects/eye9.jpg" data-lightbox="eyeq" data-title="EyeQ System"><img loading="lazy" src="public/img/projects/eye9.jpg" alt="EyeQ" /></a>
+					<a href="public/img/projects/eye1.jpg" data-lightbox="eyeq" data-title="EyeQ System"><img loading="lazy" src="public/img/projects/eye1.jpg" alt="EyeQ" /></a>
+					<a href="public/img/projects/eye2.jpg" data-lightbox="eyeq" data-title="EyeQ System"><img loading="lazy" src="public/img/projects/eye2.jpg" alt="EyeQ" /></a>
+					<a href="public/img/projects/eye3.jpg" data-lightbox="eyeq" data-title="EyeQ System"><img loading="lazy" src="public/img/projects/eye3.jpg" alt="EyeQ" /></a>
+					<a href="public/img/projects/eye4.jpg" data-lightbox="eyeq" data-title="EyeQ System"><img loading="lazy" src="public/img/projects/eye4.jpg" alt="EyeQ" /></a>
+					<a href="public/img/projects/eye5.jpg" data-lightbox="eyeq" data-title="EyeQ System"><img loading="lazy" src="public/img/projects/eye5.jpg" alt="EyeQ" /></a>
+				</div>
+			</article>
+
+			<!-- Econsents -->
+			<article class="project card" id="p-econsents">
+				<div class="project-head">
+					<h3>Econsents</h3>
+				</div>
+				<p class="summary">
+					Electronic medical consent forms, with a web back office for designing and managing the forms
+					and a mobile app for using them.
+				</p>
+				<div class="tags">
+					<span class="tag">Laravel</span><span class="tag">Kotlin</span><span class="tag">Java</span>
+					<span class="tag">REST</span><span class="tag">SOAP</span><span class="tag">JavaScript</span>
+				</div>
+				<ul class="highlights">
+					<li>Form builder with a live preview</li>
+					<li>Admin pages for OPD and IPD consent records</li>
+					<li>Attachments merged into the final PDF</li>
+					<li>Integration with the hospital HIS</li>
+				</ul>
+				<div class="gallery">
+					<a href="public/img/projects/econ1.png" data-lightbox="econsents" data-title="Econsents"><img loading="lazy" src="public/img/projects/econ1.png" alt="Econsents" /></a>
+					<a href="public/img/projects/econ2.jpg" data-lightbox="econsents" data-title="Econsents"><img loading="lazy" src="public/img/projects/econ2.jpg" alt="Econsents" /></a>
+					<a href="public/img/projects/econ3.jpg" data-lightbox="econsents" data-title="Econsents"><img loading="lazy" src="public/img/projects/econ3.jpg" alt="Econsents" /></a>
+					<a href="public/img/projects/econ4.jpg" data-lightbox="econsents" data-title="Econsents"><img loading="lazy" src="public/img/projects/econ4.jpg" alt="Econsents" /></a>
+					<a href="public/img/projects/econ5.jpg" data-lightbox="econsents" data-title="Econsents"><img loading="lazy" src="public/img/projects/econ5.jpg" alt="Econsents" /></a>
+					<a href="public/img/projects/econ7.png" data-lightbox="econsents" data-title="Econsents"><img loading="lazy" src="public/img/projects/econ7.png" alt="Econsents" /></a>
+				</div>
+			</article>
+
+			<!-- EMR -->
+			<article class="project card" id="p-emr">
+				<div class="project-head">
+					<h3>EMR</h3>
+				</div>
+				<p class="summary">
+					A web app for finding a patient's medical record and viewing the scanned documents,
+					organised by type for outpatients (OPD) and inpatients (IPD).
+				</p>
+				<div class="tags">
+					<span class="tag">Laravel</span><span class="tag">PHP</span><span class="tag">JavaScript</span><span class="tag">Oracle</span>
+				</div>
+				<div class="gallery">
+					<a href="public/img/projects/emr1.jpg" data-lightbox="emr" data-title="EMR"><img loading="lazy" src="public/img/projects/emr1.jpg" alt="EMR" /></a>
+					<a href="public/img/projects/emr2.png" data-lightbox="emr" data-title="EMR"><img loading="lazy" src="public/img/projects/emr2.png" alt="EMR" /></a>
+					<a href="public/img/projects/emr3.png" data-lightbox="emr" data-title="EMR"><img loading="lazy" src="public/img/projects/emr3.png" alt="EMR" /></a>
+				</div>
+			</article>
+
+			<!-- Assessment -->
+			<article class="project card" id="p-assessment">
+				<div class="project-head">
+					<h3>Assessment</h3>
+				</div>
+				<p class="summary">
+					A staff performance evaluation system. Each person assesses themselves against their role during the
+					evaluation round, then their supervisor and dean review it. Staff can follow the status at every step.
+				</p>
+				<div class="tags">
+					<span class="tag">Laravel</span><span class="tag">REST</span><span class="tag">Oracle</span><span class="tag">JavaScript</span>
+				</div>
+				<div class="gallery">
+					<a href="public/img/projects/assessment1.png" data-lightbox="assessment" data-title="Assessment"><img loading="lazy" src="public/img/projects/assessment1.png" alt="Assessment" /></a>
+					<a href="public/img/projects/assessment2.jpg" data-lightbox="assessment" data-title="Assessment"><img loading="lazy" src="public/img/projects/assessment2.jpg" alt="Assessment" /></a>
+					<a href="public/img/projects/assessment3.jpg" data-lightbox="assessment" data-title="Assessment"><img loading="lazy" src="public/img/projects/assessment3.jpg" alt="Assessment" /></a>
+				</div>
+			</article>
+
+			<!-- PACC -->
+			<article class="project card" id="p-pacc">
+				<div class="project-head">
+					<h3>PACC</h3>
+				</div>
+				<p class="summary">
+					A complaint reporting system for an anti-corruption civil society network, with a web back office
+					and a mobile app for sending reports.
+				</p>
+				<div class="tags">
+					<span class="tag">PHP</span><span class="tag">Kotlin</span><span class="tag">JavaScript</span>
+				</div>
+				<div class="gallery">
+					<a href="public/img/projects/pacc1.png" data-lightbox="pacc" data-title="PACC"><img loading="lazy" src="public/img/projects/pacc1.png" alt="PACC" /></a>
+					<a href="public/img/projects/pacc2.png" data-lightbox="pacc" data-title="PACC"><img loading="lazy" src="public/img/projects/pacc2.png" alt="PACC" /></a>
+				</div>
+			</article>
+
+			<!-- Tele Conference -->
+			<article class="project card" id="p-tele">
+				<div class="project-head">
+					<h3>Tele Conference</h3>
+					<span class="badge kind">Demo</span>
+				</div>
+				<p class="summary">
+					A demo that connects an Android app to a video call service (CometChat) so doctors and patients can talk by video.
+				</p>
+				<div class="tags">
+					<span class="tag">Kotlin</span><span class="tag">Node.js</span>
+				</div>
+				<p class="ref">Reference: <a href="https://www.cometchat.com/docs/ui-kit/android/v5/overview" target="_blank" rel="noopener noreferrer">CometChat Android UI Kit</a></p>
+				<div class="gallery tall">
+					<a href="public/img/projects/tele1.jpg" data-lightbox="teleconf" data-title="Tele Conference"><img loading="lazy" src="public/img/projects/tele1.jpg" alt="Tele Conference" /></a>
+					<a href="public/img/projects/tele2.jpg" data-lightbox="teleconf" data-title="Tele Conference"><img loading="lazy" src="public/img/projects/tele2.jpg" alt="Tele Conference" /></a>
+					<a href="public/img/projects/tele3.jpg" data-lightbox="teleconf" data-title="Tele Conference"><img loading="lazy" src="public/img/projects/tele3.jpg" alt="Tele Conference" /></a>
+					<a href="public/img/projects/tele4.jpg" data-lightbox="teleconf" data-title="Tele Conference"><img loading="lazy" src="public/img/projects/tele4.jpg" alt="Tele Conference" /></a>
+					<a href="public/img/projects/tele5.jpg" data-lightbox="teleconf" data-title="Tele Conference"><img loading="lazy" src="public/img/projects/tele5.jpg" alt="Tele Conference" /></a>
+					<a href="public/img/projects/tele6.jpg" data-lightbox="teleconf" data-title="Tele Conference"><img loading="lazy" src="public/img/projects/tele6.jpg" alt="Tele Conference" /></a>
+				</div>
+			</article>
+
+			<!-- Tracking -->
+			<article class="project card" id="p-tracking">
+				<div class="project-head">
+					<h3>Tracking App</h3>
+					<span class="badge kind">Prototype</span>
+				</div>
+				<p class="summary">An Android prototype for tracking patient transporters inside a hospital.</p>
+				<div class="tags"><span class="tag">Kotlin</span></div>
+				<div class="gallery tall">
+					<a href="public/img/projects/tracking1.png" data-lightbox="tracking" data-title="Tracking App"><img loading="lazy" src="public/img/projects/tracking1.png" alt="Tracking App" /></a>
+					<a href="public/img/projects/tracking2.png" data-lightbox="tracking" data-title="Tracking App"><img loading="lazy" src="public/img/projects/tracking2.png" alt="Tracking App" /></a>
+					<a href="public/img/projects/tracking3.png" data-lightbox="tracking" data-title="Tracking App"><img loading="lazy" src="public/img/projects/tracking3.png" alt="Tracking App" /></a>
+				</div>
+			</article>
+
+			<!-- Unicorn Viewer Offline -->
+			<article class="project card" id="p-viewer-offline">
+				<div class="project-head">
+					<h3>Unicorn Viewer Offline</h3>
+				</div>
+				<p class="summary">Built the iOS version of a Flutter document viewer that works offline.</p>
+				<div class="tags"><span class="tag">Flutter</span><span class="tag">iOS</span></div>
+				<div class="gallery">
+					<a href="public/img/projects/viewoffline.jpg" data-lightbox="unicornviewer" data-title="Unicorn Viewer Offline"><img loading="lazy" src="public/img/projects/viewoffline.jpg" alt="Unicorn Viewer Offline" /></a>
+					<a href="public/img/projects/viewoffline1.jpg" data-lightbox="unicornviewer" data-title="Unicorn Viewer Offline"><img loading="lazy" src="public/img/projects/viewoffline1.jpg" alt="Unicorn Viewer Offline" /></a>
+				</div>
+			</article>
+
+			<!-- Mookata -->
+			<article class="project card" id="p-mookata">
+				<div class="project-head">
+					<h3>Mookata</h3>
+				</div>
+				<p class="summary">A system for borrowing and returning BBQ stoves, with sign-in by Google.</p>
+				<div class="tags"><span class="tag">Laravel</span><span class="tag">Google login</span><span class="tag">JavaScript</span></div>
+				<div class="gallery">
+					<a href="public/img/projects/bbq1.jpg" data-lightbox="mookata" data-title="Mookata"><img loading="lazy" src="public/img/projects/bbq1.jpg" alt="Mookata" /></a>
+					<a href="public/img/projects/bbq2.jpg" data-lightbox="mookata" data-title="Mookata"><img loading="lazy" src="public/img/projects/bbq2.jpg" alt="Mookata" /></a>
+					<a href="public/img/projects/bbq3.jpg" data-lightbox="mookata" data-title="Mookata"><img loading="lazy" src="public/img/projects/bbq3.jpg" alt="Mookata" /></a>
+					<a href="public/img/projects/bbq4.jpg" data-lightbox="mookata" data-title="Mookata"><img loading="lazy" src="public/img/projects/bbq4.jpg" alt="Mookata" /></a>
+				</div>
+			</article>
+
+			<!-- ════════════════ Experiments & learning ════════════════ -->
+			<h2 class="group-title">Experiments &amp; learning<small>Small projects for trying out a device, an API or a framework.</small></h2>
+
+			<!-- Colmi -->
+			<article class="project card" id="p-colmi">
+				<div class="project-head"><h3>Colmi Smart Ring</h3><span class="badge kind">Demo</span></div>
+				<p class="summary">Reads health data from a Colmi R02 smart ring over Bluetooth with Python, ready for further processing.</p>
+				<div class="tags"><span class="tag">Python</span><span class="tag">Bluetooth</span></div>
+				<p class="ref">
+					References:
+					<a href="https://github.com/edgeimpulse/example-data-collection-colmi-r02" target="_blank" rel="noopener noreferrer">edgeimpulse/example-data-collection-colmi-r02</a> ·
+					<a href="https://tahnok.github.io/colmi_r02_client/colmi_r02_client.html" target="_blank" rel="noopener noreferrer">colmi_r02_client</a>
+				</p>
+				<div class="gallery">
+					<a href="public/img/projects/colmi1.jpg" data-lightbox="colmi" data-title="Colmi Smart Ring"><img loading="lazy" src="public/img/projects/colmi1.jpg" alt="Colmi Smart Ring" /></a>
+					<a href="public/img/projects/colmi2.jpg" data-lightbox="colmi" data-title="Colmi Smart Ring"><img loading="lazy" src="public/img/projects/colmi2.jpg" alt="Colmi Smart Ring" /></a>
+					<a href="public/img/projects/colmi3.jpg" data-lightbox="colmi" data-title="Colmi Smart Ring"><img loading="lazy" src="public/img/projects/colmi3.jpg" alt="Colmi Smart Ring" /></a>
+				</div>
+			</article>
+
+			<!-- ID card -->
+			<article class="project card" id="p-idcard">
+				<div class="project-head"><h3>ID Card Reader</h3></div>
+				<p class="summary">Reads a Thai national ID card from a card reader and sends the data to an API.</p>
+				<div class="tags"><span class="tag">Java</span></div>
+				<p class="ref">Reference: <a href="https://rd-comp.com/product/tda39vc/" target="_blank" rel="noopener noreferrer">TDA39VC card reader</a></p>
+				<div class="gallery">
+					<a href="public/img/projects/id_card.jpg" data-lightbox="idcard" data-title="ID Card Reader"><img loading="lazy" src="public/img/projects/id_card.jpg" alt="ID Card Reader" /></a>
+					<a href="public/img/projects/id_card1.jpg" data-lightbox="idcard" data-title="ID Card Reader"><img loading="lazy" src="public/img/projects/id_card1.jpg" alt="ID Card Reader" /></a>
+				</div>
+			</article>
+
+			<!-- Merge & Watermark -->
+			<article class="project card" id="p-merge">
+				<div class="project-head"><h3>Merge &amp; Watermark PDF</h3></div>
+				<p class="summary">A Python tool that merges several PDF files into one and stamps a watermark on every page.</p>
+				<div class="tags"><span class="tag">Python</span></div>
+				<div class="gallery">
+					<a href="public/img/projects/merge1.jpg" data-lightbox="merge" data-title="Merge &amp; Watermark PDF"><img loading="lazy" src="public/img/projects/merge1.jpg" alt="Merge and Watermark PDF" /></a>
+					<a href="public/img/projects/merge2.jpg" data-lightbox="merge" data-title="Merge &amp; Watermark PDF"><img loading="lazy" src="public/img/projects/merge2.jpg" alt="Merge and Watermark PDF" /></a>
+				</div>
+			</article>
+
+			<!-- Register -->
+			<article class="project card" id="p-register">
+				<div class="project-head"><h3>Register</h3><span class="badge kind">Learning</span></div>
+				<p class="summary">A member sign-up page in React that saves through an Express API.</p>
+				<div class="tags"><span class="tag">React</span><span class="tag">Node.js / Express</span></div>
+				<div class="links">
+					<a class="btn sm" href="https://github.com/wsk-24/MemberReact.git" target="_blank" rel="noopener">GitHub – React</a>
+					<a class="btn sm" href="https://github.com/wsk-24/MemberExpress.git" target="_blank" rel="noopener">GitHub – Express</a>
+					<button type="button" class="btn sm" data-video="public/video/register1.mp4">▶ Watch video</button>
+				</div>
+				<div class="gallery">
+					<a href="public/img/projects/register.png" data-lightbox="register" data-title="Register"><img loading="lazy" src="public/img/projects/register.png" alt="Register" /></a>
+				</div>
+			</article>
+
+			<!-- My Map -->
+			<article class="project card" id="p-mymap">
+				<div class="project-head"><h3>My Map</h3><span class="badge kind">Learning</span></div>
+				<p class="summary">Shows map markers loaded from an API, to learn how Google Maps fits with React and Node.js.</p>
+				<div class="tags"><span class="tag">React (Vite)</span><span class="tag">Node.js</span><span class="tag">Google Maps</span></div>
+				<div class="links">
+					<a class="btn sm" href="https://github.com/wsk-24/MyMapReact.git" target="_blank" rel="noopener">GitHub – React</a>
+					<a class="btn sm" href="https://github.com/wsk-24/MyMapExpress.git" target="_blank" rel="noopener">GitHub – Express</a>
+					<button type="button" class="btn sm" data-video="public/video/map.mp4">▶ Watch video</button>
+				</div>
+				<div class="gallery">
+					<a href="public/img/projects/map1.png" data-lightbox="map" data-title="My Map"><img loading="lazy" src="public/img/projects/map1.png" alt="My Map" /></a>
+					<a href="public/img/projects/map2.png" data-lightbox="map" data-title="My Map"><img loading="lazy" src="public/img/projects/map2.png" alt="My Map" /></a>
+				</div>
+			</article>
+		</div>
+	</section>
+</main>
+
+<footer id="contact">
+	<div class="container">
+		<div>
+			<h2 style="font-size:1.3rem;margin-bottom:6px">Get in touch</h2>
+			<p>Open to full stack, web and mobile work.</p>
+		</div>
+		<div class="actions" style="display:flex;gap:10px;flex-wrap:wrap">
+			<a class="btn primary" href="mailto:worasak.sriworawiboon@email.com">Email me</a>
+			<a class="btn" href="https://github.com/wsk-24" target="_blank" rel="noopener">GitHub</a>
+			<a class="btn" href="public/pdf/Worasak_Resume.pdf" target="_blank" rel="noopener">Résumé</a>
+		</div>
+	</div>
+	<div class="container" style="margin-top:20px"><p>&copy; Worasak Sriworawiboon</p></div>
+</footer>
+
+<!-- Video modal -->
+<div class="video-modal" id="videoModal" aria-hidden="true">
+	<button type="button" class="close" aria-label="Close video">&times;</button>
+	<video id="modalVideo" controls playsinline></video>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/js/lightbox-plus-jquery.min.js"></script>
+<script src="public/js/site.js"></script>
+</body>
 </html>
