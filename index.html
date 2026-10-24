@@ -174,6 +174,23 @@
     color: #bbb;
 }
 
+.ai-badge {
+    display: inline-block;
+    background-color: #6d28d9;
+    color: #fff;
+    padding: 2px 10px;
+    border-radius: 20px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    vertical-align: middle;
+    letter-spacing: 0.02em;
+}
+
+.project-section-note {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
 		</style>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
@@ -301,12 +318,302 @@
 								
 								<div class="gallery-grid">
 
+									<p class="project-section-note">
+										Projects marked <span class="ai-badge">Vibe Coding · AI Assistant</span>
+										were built with an AI coding assistant (Claude Code): I defined the requirements,
+										data model and flows, reviewed and tested every module, and the assistant
+										helped write the code.
+									</p>
+
+									<!-- Pixel Management (software-system-company) -->
+									<div class="project-item">
+										<div class="project-content">
+											<h3 class="project-title">
+												Pixel Management – Company Management System
+												<span class="ai-badge">Vibe Coding · AI Assistant</span>
+											</h3>
+
+											<div class="project-tags">
+												<span class="project-tag">React 19</span>
+												<span class="project-tag">TypeScript</span>
+												<span class="project-tag">Vite</span>
+												<span class="project-tag">Node.js / Express</span>
+												<span class="project-tag">PostgreSQL</span>
+												<span class="project-tag">JWT</span>
+												<span class="project-tag">Flutter</span>
+												<span class="project-tag">Firebase Notification</span>
+											</div>
+
+											<div class="project-description">
+												<p>
+													An internal platform for running a software company day to day: projects,
+													tasks, people, time off and overtime in one place, with a web app for the
+													office and a Flutter mobile app for the team on the go.
+												</p>
+
+												<h4>Key Features</h4>
+												<ul>
+													<li>Dashboard and analytics with KPIs, charts and team activity</li>
+													<li>Project management and Kanban board with task cards, @mention comments and image attachments</li>
+													<li>Daily work reports, notes, file management and a support / incident log</li>
+													<li>
+														HR workflows:
+														<ul>
+															<li>Leave requests with entitlements and approval</li>
+															<li>Duty roster with shift swap requests</li>
+															<li>Overtime records, approvals and payroll summary</li>
+															<li>Expense claims</li>
+														</ul>
+													</li>
+													<li>Team directory, internal messaging, notifications and a shared calendar</li>
+													<li>Role-based access (admin / HR / manager / staff) with JWT authentication, sign-in by employee ID or email</li>
+													<li>Thai / English UI and per-user appearance settings (accent colour, sidebar)</li>
+													<li>Flutter mobile app with push notifications (Firebase)</li>
+												</ul>
+											</div>
+										</div>
+
+										<div class="project-images">
+											<a href="public/img/projects/company2.jpg" data-lightbox="company" data-title="Pixel Management - Dashboard"><img src="public/img/projects/company2.jpg" alt="Pixel Management Dashboard" /></a>
+											<a href="public/img/projects/company3.jpg" data-lightbox="company" data-title="Pixel Management - Analytics"><img src="public/img/projects/company3.jpg" alt="Pixel Management Analytics" /></a>
+											<a href="public/img/projects/company4.jpg" data-lightbox="company" data-title="Pixel Management - Projects"><img src="public/img/projects/company4.jpg" alt="Pixel Management Projects" /></a>
+											<a href="public/img/projects/company5.jpg" data-lightbox="company" data-title="Pixel Management - Kanban Board"><img src="public/img/projects/company5.jpg" alt="Pixel Management Kanban" /></a>
+											<a href="public/img/projects/company7.jpg" data-lightbox="company" data-title="Pixel Management - Duty Roster"><img src="public/img/projects/company7.jpg" alt="Pixel Management Duty Roster" /></a>
+											<a href="public/img/projects/company8.jpg" data-lightbox="company" data-title="Pixel Management - Overtime"><img src="public/img/projects/company8.jpg" alt="Pixel Management Overtime" /></a>
+											<a href="public/img/projects/company9.jpg" data-lightbox="company" data-title="Pixel Management - Calendar"><img src="public/img/projects/company9.jpg" alt="Pixel Management Calendar" /></a>
+											<a href="public/img/projects/company10.jpg" data-lightbox="company" data-title="Pixel Management - Team"><img src="public/img/projects/company10.jpg" alt="Pixel Management Team" /></a>
+											<a href="public/img/projects/company11.jpg" data-lightbox="company" data-title="Pixel Management - Messages"><img src="public/img/projects/company11.jpg" alt="Pixel Management Messages" /></a>
+											<a href="public/img/projects/company6.jpg" data-lightbox="company" data-title="Pixel Management - Leave"><img src="public/img/projects/company6.jpg" alt="Pixel Management Leave" /></a>
+											<a href="public/img/projects/company1.jpg" data-lightbox="company" data-title="Pixel Management - Sign in"><img src="public/img/projects/company1.jpg" alt="Pixel Management Sign in" /></a>
+										</div>
+									</div>
+
+									<hr>
+
+									<!-- CareNest -->
+									<div class="project-item">
+										<div class="project-content">
+											<h3 class="project-title">
+												CareNest – Care Home Management (SaaS)
+												<span class="ai-badge">Vibe Coding · AI Assistant</span>
+											</h3>
+
+											<div class="project-tags">
+												<span class="project-tag">React 19</span>
+												<span class="project-tag">TypeScript</span>
+												<span class="project-tag">Tailwind CSS</span>
+												<span class="project-tag">Node.js / Express</span>
+												<span class="project-tag">Prisma</span>
+												<span class="project-tag">PostgreSQL</span>
+												<span class="project-tag">Flutter</span>
+											</div>
+
+											<div class="project-description">
+												<p>
+													A management system for nursing and elderly care facilities. It covers the
+													whole stay of a resident – admission, room and bed, daily care, medication,
+													meals, appointments and billing – and is sold as a subscription SaaS.
+												</p>
+
+												<h4>Key Features</h4>
+												<ul>
+													<li>Resident records: medical history, conditions &amp; allergies, contacts, assessments and photos</li>
+													<li>Rooms &amp; beds: building/floor structure, bed assignment, transfers and history</li>
+													<li>Daily care: vital signs, ADL, hygiene, diaper changes and nursing notes</li>
+													<li>Medication (lightweight eMAR): catalogue, schedules, administration and history</li>
+													<li>Nutrition: eating profiles, food allergies, diet plans, menus and intake tracking</li>
+													<li>Doctor / hospital appointments and physical therapy programmes with progress tracking</li>
+													<li>Billing: charges → invoices → payments, printable invoices / receipts, income &amp; expenses</li>
+													<li>Staff accounts by role (doctor, nurse, caregiver, therapist) with a permission matrix</li>
+													<li>Family portal for relatives, reports dashboard, pricing page with subscription plans</li>
+													<li>Thai / English UI, plus a Flutter mobile app</li>
+												</ul>
+											</div>
+										</div>
+
+										<div class="project-images">
+											<a href="public/img/projects/carenest2.jpg" data-lightbox="carenest" data-title="CareNest - Dashboard"><img src="public/img/projects/carenest2.jpg" alt="CareNest Dashboard" /></a>
+											<a href="public/img/projects/carenest3.jpg" data-lightbox="carenest" data-title="CareNest - Residents"><img src="public/img/projects/carenest3.jpg" alt="CareNest Residents" /></a>
+											<a href="public/img/projects/carenest4.jpg" data-lightbox="carenest" data-title="CareNest - Rooms &amp; Beds"><img src="public/img/projects/carenest4.jpg" alt="CareNest Rooms" /></a>
+											<a href="public/img/projects/carenest5.jpg" data-lightbox="carenest" data-title="CareNest - Pricing / Subscription Plans"><img src="public/img/projects/carenest5.jpg" alt="CareNest Pricing" /></a>
+											<a href="public/img/projects/carenest1.jpg" data-lightbox="carenest" data-title="CareNest - Sign in"><img src="public/img/projects/carenest1.jpg" alt="CareNest Sign in" /></a>
+										</div>
+									</div>
+
+									<hr>
+
+									<!-- DailyJober -->
+									<div class="project-item">
+										<div class="project-content">
+											<h3 class="project-title">
+												DailyJober – Nearby Daily Job Finder
+												<span class="ai-badge">Vibe Coding · AI Assistant</span>
+											</h3>
+
+											<div class="project-tags">
+												<span class="project-tag">React 19</span>
+												<span class="project-tag">Vite</span>
+												<span class="project-tag">Node.js / Express</span>
+												<span class="project-tag">PostgreSQL</span>
+												<span class="project-tag">JWT</span>
+											</div>
+
+											<div class="project-description">
+												<p>
+													A job board for daily and short-term work. Job seekers find work near them
+													on a map, and employers post jobs and manage applicants from their own portal.
+												</p>
+
+												<h4>Key Features</h4>
+												<ul>
+													<li>Map search with a radius view: real distances calculated in SQL (haversine) from each job's location</li>
+													<li>Filters by category, keyword and conditions (e.g. same-day pay, meals provided)</li>
+													<li>Save jobs and apply in one tap</li>
+													<li>
+														Employer portal (JWT sign-in):
+														<ul>
+															<li>Post and edit jobs, pick the location on a map</li>
+															<li>Review, accept or reject applicants</li>
+															<li>A job is marked filled automatically once the headcount is reached</li>
+														</ul>
+													</li>
+													<li>Blog with a content editor and Google AdSense settings</li>
+													<li>Mobile-first responsive design</li>
+												</ul>
+											</div>
+										</div>
+
+										<div class="project-images">
+											<a href="public/img/projects/dailyjob1.jpg" data-lightbox="dailyjob" data-title="DailyJober - Home"><img src="public/img/projects/dailyjob1.jpg" alt="DailyJober Home" /></a>
+											<a href="public/img/projects/dailyjob2.jpg" data-lightbox="dailyjob" data-title="DailyJober - Map search"><img src="public/img/projects/dailyjob2.jpg" alt="DailyJober Map search" /></a>
+											<a href="public/img/projects/dailyjob4.jpg" data-lightbox="dailyjob" data-title="DailyJober - Employer portal"><img src="public/img/projects/dailyjob4.jpg" alt="DailyJober Employer portal" /></a>
+											<a href="public/img/projects/dailyjob3.jpg" data-lightbox="dailyjob" data-title="DailyJober - Blog"><img src="public/img/projects/dailyjob3.jpg" alt="DailyJober Blog" /></a>
+											<a href="public/img/projects/dailyjobm1.jpg" data-lightbox="dailyjob" data-title="DailyJober - Mobile home"><img src="public/img/projects/dailyjobm1.jpg" alt="DailyJober Mobile home" /></a>
+											<a href="public/img/projects/dailyjobm2.jpg" data-lightbox="dailyjob" data-title="DailyJober - Mobile job list"><img src="public/img/projects/dailyjobm2.jpg" alt="DailyJober Mobile job list" /></a>
+										</div>
+									</div>
+
+									<hr>
+
+									<!-- DuckNovel (Venol) -->
+									<div class="project-item">
+										<div class="project-content">
+											<h3 class="project-title">
+												DuckNovel – Online Novel &amp; Webtoon Platform
+												<span class="ai-badge">Vibe Coding · AI Assistant</span>
+											</h3>
+
+											<div class="project-tags">
+												<span class="project-tag">Laravel 13</span>
+												<span class="project-tag">PHP 8.5</span>
+												<span class="project-tag">MySQL</span>
+												<span class="project-tag">Tailwind CSS</span>
+												<span class="project-tag">Opn Payments</span>
+												<span class="project-tag">Google Login</span>
+											</div>
+
+											<div class="project-description">
+												<p>
+													A Thai platform for reading novels and webtoons. Readers buy chapters with
+													coins, and writers publish their work, follow their stats and get paid.
+												</p>
+
+												<h4>Key Features</h4>
+												<ul>
+													<li>Browse, rankings, genres and tags, search with autocomplete, reading missions and a personal library</li>
+													<li>Coin wallet backed by a ledger: buy chapters, top up by card or PromptPay QR (Opn Payments), receipts and refunds</li>
+													<li>
+														Writer studio:
+														<ul>
+															<li>Rich-text chapter editor, scheduled publishing, cartoon uploads</li>
+															<li>Views and sales charts</li>
+															<li>Earnings wallet and payout requests</li>
+														</ul>
+													</li>
+													<li>Social sign-in (Google / LINE), email verification and password reset</li>
+													<li>Admin tools: users, reports and content moderation, payouts, security log</li>
+													<li>18+ age gate, PDPA data export / account deletion, legal pages</li>
+													<li>SEO: sitemaps, structured data and generated Open Graph images</li>
+													<li>Covered by 270+ automated feature tests</li>
+												</ul>
+											</div>
+
+											<div class="project-links mt-3 mb-2">
+												<a href="https://ducknovel.com" target="_blank" rel="noopener noreferrer" class="button primary small">Visit ducknovel.com</a>
+											</div>
+										</div>
+
+										<div class="project-images">
+											<a href="public/img/projects/venol1.jpg" data-lightbox="venol" data-title="DuckNovel - Home"><img src="public/img/projects/venol1.jpg" alt="DuckNovel Home" /></a>
+											<a href="public/img/projects/venol3.jpg" data-lightbox="venol" data-title="DuckNovel - Book page"><img src="public/img/projects/venol3.jpg" alt="DuckNovel Book page" /></a>
+											<a href="public/img/projects/venol4.jpg" data-lightbox="venol" data-title="DuckNovel - Reader"><img src="public/img/projects/venol4.jpg" alt="DuckNovel Reader" /></a>
+											<a href="public/img/projects/venol5.jpg" data-lightbox="venol" data-title="DuckNovel - Writer dashboard"><img src="public/img/projects/venol5.jpg" alt="DuckNovel Writer dashboard" /></a>
+											<a href="public/img/projects/venol6.jpg" data-lightbox="venol" data-title="DuckNovel - Coin top-up"><img src="public/img/projects/venol6.jpg" alt="DuckNovel Coin top-up" /></a>
+											<a href="public/img/projects/venol2.jpg" data-lightbox="venol" data-title="DuckNovel - Explore"><img src="public/img/projects/venol2.jpg" alt="DuckNovel Explore" /></a>
+										</div>
+									</div>
+
+									<hr>
+
+									<!-- ThaiProfit -->
+									<div class="project-item">
+										<div class="project-content">
+											<h3 class="project-title">
+												ThaiProfit – Profit Calculator for Online Sellers
+												<span class="ai-badge">Vibe Coding · AI Assistant</span>
+											</h3>
+
+											<div class="project-tags">
+												<span class="project-tag">Laravel 12</span>
+												<span class="project-tag">MySQL</span>
+												<span class="project-tag">Tailwind CSS</span>
+												<span class="project-tag">Alpine.js</span>
+												<span class="project-tag">Google Login</span>
+											</div>
+
+											<div class="project-description">
+												<p>
+													A tool that shows Thai sellers on Shopee, Lazada and TikTok Shop how much
+													they really keep after platform fees, shipping, ads and costs – per order
+													and for the whole month.
+												</p>
+
+												<h4>Key Features</h4>
+												<ul>
+													<li>Real-time profit calculator; the same formulas run in PHP and JavaScript and are checked against shared test fixtures</li>
+													<li>Platform fee rules stored with versions and effective dates, so old calculations never change</li>
+													<li>Monthly profit and profit-goal planner; ROAS, COD return, campaign and platform comparison tools</li>
+													<li>
+														Seller account (Google sign-in):
+														<ul>
+															<li>Saved calculations and product catalogue (CSV import / export)</li>
+															<li>Import platform settlement files (XLSX / CSV) and ad spend reports</li>
+															<li>Monthly expenses and a profit &amp; loss report with charts, Excel / PDF export</li>
+														</ul>
+													</li>
+													<li>Admin panel for fee rules, users, blog and SEO landing pages, with a security log</li>
+												</ul>
+											</div>
+										</div>
+
+										<div class="project-images">
+											<a href="public/img/projects/thaiprofit1.jpg" data-lightbox="thaiprofit" data-title="ThaiProfit - Calculator"><img src="public/img/projects/thaiprofit1.jpg" alt="ThaiProfit Calculator" /></a>
+											<a href="public/img/projects/thaiprofit2.jpg" data-lightbox="thaiprofit" data-title="ThaiProfit - Monthly profit"><img src="public/img/projects/thaiprofit2.jpg" alt="ThaiProfit Monthly profit" /></a>
+											<a href="public/img/projects/thaiprofit3.jpg" data-lightbox="thaiprofit" data-title="ThaiProfit - Profit &amp; Loss"><img src="public/img/projects/thaiprofit3.jpg" alt="ThaiProfit Profit and Loss" /></a>
+											<a href="public/img/projects/thaiprofit4.jpg" data-lightbox="thaiprofit" data-title="ThaiProfit - Settlement report"><img src="public/img/projects/thaiprofit4.jpg" alt="ThaiProfit Settlement report" /></a>
+											<a href="public/img/projects/thaiprofit5.jpg" data-lightbox="thaiprofit" data-title="ThaiProfit - Products"><img src="public/img/projects/thaiprofit5.jpg" alt="ThaiProfit Products" /></a>
+											<a href="public/img/projects/thaiprofit6.jpg" data-lightbox="thaiprofit" data-title="ThaiProfit - Admin"><img src="public/img/projects/thaiprofit6.jpg" alt="ThaiProfit Admin" /></a>
+										</div>
+									</div>
+
+									<hr>
+
 									<!-- Coffee -->
 									<div class="project-item">
 										<div class="project-content">
 											<h3 class="project-title">
 												Coffee
-												<span class="freelance-badge">[Self Lernning]</span>
+												<span class="freelance-badge">[Self Learning]</span>
 											</h3>
 											
 											<div class="project-tags">
@@ -396,25 +703,7 @@
 											</div>
 										</div>
 										
-										<div class="project-images content-pettag" id="pettag-images">
-											<!-- <a href="public/img/projects/pettag3.jpg" data-lightbox="pettag" data-title="Pettag Thailand - Image 1">
-												<img src="public/img/projects/pettag3.jpg" alt="Pettag Thailand Image 1" />
-											</a>
-											<a href="public/img/projects/pettag4.jpg" data-lightbox="pettag" data-title="Pettag Thailand - Image 2">
-												<img src="public/img/projects/pettag4.jpg" alt="Pettag Thailand Image 2" />
-											</a>
-											<a href="public/img/projects/pettag6.jpg" data-lightbox="pettag" data-title="Pettag Thailand - Image 3">
-												<img src="public/img/projects/pettag6.jpg" alt="Pettag Thailand Image 3" />
-											</a>
-											<a href="public/img/projects/pettag7.jpg" data-lightbox="pettag" data-title="Pettag Thailand - Image 4">
-												<img src="public/img/projects/pettag7.jpg" alt="Pettag Thailand Image 4" />
-											</a>
-											<a href="public/img/projects/pettag20.jpg" data-lightbox="pettag" data-title="Pettag Thailand - Image 5">
-												<img src="public/img/projects/pettag20.jpg" alt="Pettag Thailand Image 5" />
-											</a>
-											<a href="public/img/projects/pettag21.jpg" data-lightbox="pettag" data-title="Pettag Thailand - Image 6">
-												<img src="public/img/projects/pettag21.jpg" alt="Pettag Thailand Image 6" />
-											</a> -->
+										<div class="project-images" id="coffee-images">
 										</div>
 									</div>
 
